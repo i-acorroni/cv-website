@@ -1,0 +1,17 @@
+[
+  {
+    "id": "proj1",
+    "name": "Example Project",
+    "description": "A brief description of your project.",
+    "longDescription": "A more detailed description of what the project does, technologies used, and key features.",
+    "techStack": ["React", "TypeScript", "Next.js"],
+    "links": {
+      "demo": "https://example.com/demo",
+      "github": "https://github.com/username/project",
+      "website": "https://example.com"
+    },
+    "image": "/images/project-placeholder.jpg",
+    "featured": true
+  }
+]
+

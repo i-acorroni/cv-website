@@ -1,0 +1,17 @@
+[
+  {
+    "id": "pub1",
+    "title": "Example Publication Title",
+    "authors": ["Your Name", "Co-author Name"],
+    "venue": "Conference/Journal Name",
+    "year": 2024,
+    "type": "conference",
+    "links": {
+      "paper": "https://example.com/paper",
+      "scholar": "https://scholar.google.com/example",
+      "arxiv": "https://arxiv.org/example"
+    },
+    "citation": "Your Name and Co-author Name. Example Publication Title. Conference/Journal Name, 2024."
+  }
+]
+
