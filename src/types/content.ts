@@ -16,7 +16,8 @@ export interface Publication {
   authors: string[];
   venue: string;
   year: number;
-  type: "journal" | "conference" | "workshop" | "preprint" | "other";
+  type: "journal" | "conference" | "workshop" | "preprint" | "other" | "book-chapter" | "blog";
+  language: "english" | "portuguese" | "other";
   links?: {
     paper?: string;
     scholar?: string;

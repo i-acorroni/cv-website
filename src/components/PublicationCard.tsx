@@ -13,9 +13,14 @@ export default function PublicationCard({ publication }: PublicationCardProps) {
         <h3 className="text-lg font-heading font-semibold text-text flex-1">
           {publication.title}
         </h3>
-        <span className="ml-2 px-2 py-1 text-xs rounded bg-accent text-white font-mono">
-          {publication.type}
-        </span>
+        <div className="ml-2 flex flex-col items-end gap-1">
+          <span className="px-2 py-1 text-xs rounded bg-accent text-white font-mono">
+            {publication.type}
+          </span>
+          <span className="px-2 py-1 text-xs rounded bg-surface border border-border text-muted font-mono capitalize">
+            {publication.language}
+          </span>
+        </div>
       </div>
       <p className="text-text mb-2">
         {publication.authors.join(", ")}
@@ -32,7 +37,7 @@ export default function PublicationCard({ publication }: PublicationCardProps) {
               rel="noopener noreferrer"
               className="text-sm text-accent hover:underline flex items-center"
             >
-              Paper <ExternalLink className="h-3 w-3 ml-1" />
+              {publication.type === "blog" ? "Read post" : "Paper"} <ExternalLink className="h-3 w-3 ml-1" />
             </Link>
           )}
           {publication.links.scholar && (

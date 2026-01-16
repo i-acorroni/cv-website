@@ -1,17 +1,81 @@
 [
   {
-    "id": "pub1",
-    "title": "Example Publication Title",
-    "authors": ["Your Name", "Co-author Name"],
-    "venue": "Conference/Journal Name",
-    "year": 2024,
-    "type": "conference",
+    "id": "pub2",
+    "title": "From Codex To Code: Exploring Divergences And Intersections Of Text-Driven And Code-Driven Normativity",
+    "authors": ["Izabela Acorroni"],
+    "venue": "JELT Journal",
+    "year": 2025,
+    "type": "journal",
+    "language": "english",
     "links": {
-      "paper": "https://example.com/paper",
-      "scholar": "https://scholar.google.com/example",
-      "arxiv": "https://arxiv.org/example"
+      "paper": "https://jelt.padovauniversitypress.it/2025/1/2"
     },
-    "citation": "Your Name and Co-author Name. Example Publication Title. Conference/Journal Name, 2024."
+    "citation": "Izabela Acorroni. From Codex To Code: Exploring Divergences And Intersections Of Text-Driven And Code-Driven Normativity. JELT Journal, 2025."
+  },
+  {
+    "id": "pub3",
+    "title": "Who holds the key? An analysis of cryptography as a tool to protect personal data and authorities' attempts to gain control over it throughout history",
+    "authors": ["Izabela Acorroni"],
+    "venue": "National Council for Research and Graduate Studies in Law/Brazil",
+    "year": 2025,
+    "type": "book-chapter",
+    "language": "english",
+    "links": {
+      "paper": "https://site.conpedi.org.br/publicacoes/czk1u677/op29u40h/7N6E4M6didG9jLhu.pdf"
+    },
+    "citation": "Izabela Acorroni. Who holds the key? An analysis of cryptography as a tool to protect personal data and authorities' attempts to gain control over it throughout history. National Council for Research and Graduate Studies in Law/Brazil, 2025. ISBN: 978-65-5274-361-9."
+  },
+  {
+    "id": "pub4",
+    "title": "The Increasingly Technological Judiciary System in a Country of Digitally Excluded People: how to keep up with global trends while addressing constituents struggles?",
+    "authors": ["Izabela Acorroni, Gisele Soares"],
+    "venue": "National Council for Research and Graduate Studies in Law/Brazil",
+    "year": 2023,
+    "type": "book-chapter",
+    "language": "portuguese",
+    "links": {
+      "paper": "https://site.conpedi.org.br/publicacoes/4k5lvev7/dz2x2qk1/hiHVzlQds0opklk6.pdf"
+    },
+    "citation": "Izabela Acorroni. The Increasingly Technological Judiciary System in a Country of Digitally Excluded People: how to keep up with global trends while addressing constituents struggles? National Council for Research and Graduate Studies in Law/Brazil, 2023. ISBN: 978-65-5648-509-6."
+  },
+  {
+    "id": "pub5",
+    "title": "Preliminary decisions on reintegration of property ownership in the COVID-19 pandemic",
+    "authors": ["Izabela Acorroni, Luísa Domingues"],
+    "venue": "Expert Publisher/Brazil",
+    "year": 2020,
+    "type": "book-chapter",
+    "language": "portuguese",
+    "links": {
+      "paper": "https://experteditora.com.br/wp-content/uploads/2020/12/ASPECTOS-CONTEMPORANEOS-DOS-DIREITOS-REAIS.pdf"
+    },
+    "citation": "Izabela Acorroni. Preliminary decisions on reintegration of property ownership in the COVID-19 pandemic. Expert Publisher/Brazil, 2021. ISBN: 978-65-992633-6-1."
+  },
+  {
+    "id": "pub6",
+    "title": "Inteligência Artificial e Discriminação Algorítmica",
+    "authors": ["Izabela Acorroni, D. Almeida, J. Rocha; M. Lopes"],
+    "venue": "Brazilian Centre of Law, Technology and Innovation Blog",
+    "year": 2025,
+    "type": "blog",
+    "language": "portuguese",
+    "links": {
+      "paper": "https://www.dtibr.com/post/intelig%C3%AAncia-artificial-e-discrimina%C3%A7%C3%A3o-algor%C3%ADtmica"
+    },
+    "citation": "Izabela Acorroni. Inteligência Artificial e Discriminação Algorítmica. Brazilian Centre of Law, Technology and Innovation Blog, 2025."
+  },
+  {
+    "id": "pub7",
+    "title": "Gestão de Dados Biométricos Digitais e Reconhecimento Facial na Segurança Pública",
+    "authors": ["Izabela Acorroni", "Camila Almeida", "Sabrina Pedrosa Dias"],
+    "venue": "Brazilian Centre of Law, Technology and Innovation Blog",
+    "year": 2025,
+    "type": "blog",
+    "language": "portuguese",
+    "links": {
+      "paper": "https://www.dtibr.com/post/gest%C3%A3o-de-dados-biom%C3%A9tricos-digitais-e-reconhecimento-facial-na-seguran%C3%A7a-p%C3%BAblica"
+    },
+    "citation": "Izabela Acorroni, Camila Almeida, Sabrina Pedrosa Dias. Gestão de Dados Biométricos Digitais e Reconhecimento Facial na Segurança Pública. Brazilian Centre of Law, Technology and Innovation Blog, 2025."
   }
 ]
 

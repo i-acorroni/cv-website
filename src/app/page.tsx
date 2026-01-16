@@ -64,7 +64,7 @@ export default function Home() {
           Award for Best Overall Postgraduate Law Student.
           </p>
           <p className="text-text mb-4">
-            Add more paragraphs to describe your work, achievements, and what drives you.
+            
           </p>
           
           <h3 className="text-xl font-heading font-semibold text-text mt-8 mb-4">
@@ -83,7 +83,7 @@ export default function Home() {
           </h3>
           <ul className="list-disc list-inside text-text space-y-2">
             <li><b>Research maturity:</b> over a decade of research experience, with sustained focus on law&tech questions since 2020.</li>
-            <li><b>Justice systems experience:</b> former legal consultant at Brazil’s State Court of Justice (TJMG), with hands-on work on technology adoption, access to justice, and institutional innovation.</li>
+            <li><b>Justice systems experience:</b> former legal consultant at a Brazilian State Court of Justice (TJMG), former legal consultant at Brazil’s State Court of Justice (TJMG), leading and supporting projects on technology adoption, access to justice, and service design.</li>
             <li><b>Interdisciplinarity:</b> experience working across legal theory, regulation, and socio-technical infrastructures, bridging doctrinal analysis with implementation realities.</li>
             <li><b>Technical fluency:</b> a tecnólogo background that supports engagement with technical subjects, and occasional coding to prototype and test ideas.</li>
           </ul>
