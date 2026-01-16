@@ -1,74 +1,18 @@
 export default function CVPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-h1 font-heading font-semibold text-text mb-8">Curriculum Vitae</h1>
-
-      <div className="space-y-8">
-        {/* Education Section */}
-        <section>
-          <h2 className="text-h2 font-heading font-semibold text-text mb-4 border-b border-border pb-2">
-            Education
-          </h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-lg font-heading font-semibold text-text">
-                Degree Name
-              </h3>
-              <p className="text-text">Institution Name</p>
-              <p className="text-meta text-muted font-mono">Year - Year</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Experience Section */}
-        <section>
-          <h2 className="text-h2 font-heading font-semibold text-text mb-4 border-b border-border pb-2">
-            Experience
-          </h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-lg font-heading font-semibold text-text">
-                Position Title
-              </h3>
-              <p className="text-text">Company/Institution</p>
-              <p className="text-meta text-muted font-mono">Date - Date</p>
-              <ul className="mt-2 list-disc list-inside text-text space-y-1">
-                <li>Key achievement or responsibility</li>
-                <li>Another key point</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Skills Section */}
-        <section>
-          <h2 className="text-h2 font-heading font-semibold text-text mb-4 border-b border-border pb-2">
-            Skills
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <h3 className="font-heading font-semibold text-text mb-2">Technical Skills</h3>
-              <p className="text-text">Skill 1, Skill 2, Skill 3</p>
-            </div>
-            <div>
-              <h3 className="font-heading font-semibold text-text mb-2">Languages</h3>
-              <p className="text-text">Language 1, Language 2</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Awards Section */}
-        <section>
-          <h2 className="text-h2 font-heading font-semibold text-text mb-4 border-b border-border pb-2">
-            Awards & Honors
-          </h2>
-          <div className="space-y-2">
-            <div>
-              <h3 className="font-heading font-semibold text-text">Award Name</h3>
-              <p className="text-text">Organization, Year</p>
-            </div>
-          </div>
-        </section>
+      <p className="text-xl text-text mb-6">
+        Last updated: January 2026
+        </p>
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="w-full h-[calc(100vh-12rem)] min-h-[800px]">
+          <iframe
+            src="/cv.pdf"
+            className="w-full h-full border-0"
+            title="CV PDF Viewer"
+          />
+        </div>
       </div>
     </div>
   );
