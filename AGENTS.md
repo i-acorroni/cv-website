@@ -1,33 +1,62 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-This repository is currently empty (no tracked source files yet). When code is added, keep a clear separation between application code, tests, and static assets. A typical layout might look like:
+The project follows a Next.js App Router structure with clear separation of concerns:
 
-- `src/` for application code
-- `tests/` for unit/integration tests
-- `public/` or `assets/` for static files
-
-Update this section once the real structure is in place.
+- `src/app/` - Next.js pages and routes
+- `src/components/` - Reusable React components
+- `src/lib/` - Utility functions and helpers
+- `src/types/` - TypeScript type definitions
+- `content/` - Content files (blog posts, publications, projects)
+  - `content/blog/` - Markdown blog posts
+  - `content/publications/` - Publications JSON data
+  - `content/projects/` - Projects JSON data
+- `public/` - Static assets (images, favicon, etc.)
 
 ## Build, Test, and Development Commands
-No build or test tooling is configured yet. When you add a framework or tooling, document the exact commands here. Example format:
 
-- `npm run dev`: start the local dev server
-- `npm test`: run the test suite
-- `npm run build`: create a production build
+- `npm run dev`: Start the local development server at http://localhost:3000
+- `npm run build`: Create a production build
+- `npm start`: Start the production server (after build)
+- `npm run lint`: Run ESLint to check for code issues
 
 ## Coding Style & Naming Conventions
-No style guide or formatter is configured yet. When you introduce one, specify it here (e.g., Prettier, ESLint, or a language formatter). Document naming conventions (e.g., `camelCase` for variables, `PascalCase` for components) and indentation rules.
+
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS utility classes
+- **Formatting**: ESLint with Next.js config
+- **Naming Conventions**:
+  - Components: `PascalCase.tsx` (e.g., `BlogCard.tsx`)
+  - Utilities: `camelCase.ts` (e.g., `markdown.ts`)
+  - Types: `camelCase.ts` (e.g., `content.ts`)
+  - Pages: `page.tsx` (Next.js App Router convention)
+- **Indentation**: 2 spaces
+- **Quotes**: Single or double quotes (be consistent)
 
 ## Testing Guidelines
+
 No test framework is set up yet. When tests are added, note the framework, the test file naming pattern, and the minimal expectations for coverage. Example:
 
-- Framework: `vitest`
+- Framework: `vitest` or `jest`
 - Naming: `*.test.ts` or `*.spec.ts`
 - Run: `npm test`
 
 ## Commit & Pull Request Guidelines
-There is no commit history to infer conventions from yet. Until a standard is established, keep commit messages short and imperative (e.g., "Add hero section"). For pull requests, include a clear description, list key changes, and add screenshots for UI updates.
+
+Follow conventional commit format:
+
+- `Add: feature description` - New features
+- `Fix: bug description` - Bug fixes
+- `Update: change description` - Updates to existing features
+- `Refactor: refactoring description` - Code refactoring
+- `Docs: documentation update` - Documentation changes
+- `Style: styling changes` - CSS/styling only
+
+For pull requests, include a clear description, list key changes, and add screenshots for UI updates.
 
 ## Configuration & Secrets
-If you add environment variables or API keys, document them in a `.env.example` file and never commit real secrets. Note required config values here once they exist.
+
+Environment variables are documented in `.env.example`. Never commit real secrets to the repository. Current environment variables:
+
+- `NEXT_PUBLIC_SITE_URL` - Site URL (optional, defaults to localhost:3000)
+- `NEXT_PUBLIC_SITE_NAME` - Site name (optional)
