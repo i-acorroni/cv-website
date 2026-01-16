@@ -86,17 +86,57 @@ Update the following files to customize your site:
 
 ## Development
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for development guidelines and code style.
+### Environment Setup
+
+1. Create `.env.local` file with your Substack RSS feed URL:
+   ```env
+   NEXT_PUBLIC_SUBSTACK_FEED_URL=https://yourpublication.substack.com/feed
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Test the build locally:
+   ```bash
+   npm run build
+   npm start
+   ```
+
+### Development Tips
+
+- The site uses TypeScript - check for type errors with `npm run build`
+- Substack posts are fetched from RSS feed at build time
+- Images from Substack are automatically optimized by Next.js
+- Test responsive design and dark mode before deploying
 
 ## Deployment
 
-See [DEPLOYMENT.md](./DEPLOYMENT.md) for deployment instructions.
+### Vercel (Recommended)
+
+1. Push your code to GitHub/GitLab/Bitbucket
+2. Sign up at [vercel.com](https://vercel.com) and import your repository
+3. Add environment variable `NEXT_PUBLIC_SUBSTACK_FEED_URL` in Vercel dashboard
+4. Deploy - Vercel auto-detects Next.js and handles everything
+5. Every push to `main` branch automatically deploys
+
+### Other Platforms
+
+- **Netlify**: Similar to Vercel, connect repository and add environment variables
+- **Static Export**: Update `next.config.js` with `output: 'export'` for static hosting
+
+### Environment Variables in Production
+
+Make sure to add `NEXT_PUBLIC_SUBSTACK_FEED_URL` in your hosting platform's environment variables settings.
 
 ## License
 
 This project is open source and available under the MIT License.
 
-## Contributing
-
-Contributions are welcome! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
