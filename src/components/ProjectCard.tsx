@@ -9,9 +9,9 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
+    <div className="border border-border rounded-lg overflow-hidden hover:border-accent transition-colors bg-surface">
       {project.image && (
-        <div className="relative w-full h-48 bg-gray-100 dark:bg-gray-800">
+        <div className="relative w-full h-48 bg-border">
           <Image
             src={project.image}
             alt={project.name}
@@ -22,10 +22,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
       )}
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+        <h3 className="text-xl font-heading font-semibold text-text mb-2">
           {project.name}
         </h3>
-        <p className="text-gray-700 dark:text-gray-300 mb-4">
+        <p className="text-text mb-4">
           {project.description}
         </p>
         {project.techStack && project.techStack.length > 0 && (
@@ -33,7 +33,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             {project.techStack.map((tech) => (
               <span
                 key={tech}
-                className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded"
+                className="px-2 py-1 text-meta bg-border text-text rounded font-mono"
               >
                 {tech}
               </span>
@@ -47,7 +47,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 href={project.links.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-blue-600 dark:text-blue-400 hover:underline flex items-center"
+                className="text-sm text-accent hover:underline flex items-center"
               >
                 Demo <ExternalLink className="h-3 w-3 ml-1" />
               </Link>
@@ -57,7 +57,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 href={project.links.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-blue-600 dark:text-blue-400 hover:underline flex items-center"
+                className="text-sm text-accent hover:underline flex items-center"
               >
                 GitHub <Github className="h-3 w-3 ml-1" />
               </Link>
@@ -67,7 +67,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 href={project.links.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-blue-600 dark:text-blue-400 hover:underline flex items-center"
+                className="text-sm text-accent hover:underline flex items-center"
               >
                 Website <ExternalLink className="h-3 w-3 ml-1" />
               </Link>

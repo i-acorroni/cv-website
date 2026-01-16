@@ -65,7 +65,7 @@ export default function SocialLinks({ links }: { links?: SocialLink[] }) {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+            className="text-muted hover:text-accent transition-colors"
             aria-label={link.name}
           >
             <IconComponent className="h-5 w-5" />

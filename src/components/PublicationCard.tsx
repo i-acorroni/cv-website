@@ -7,32 +7,20 @@ interface PublicationCardProps {
 }
 
 export default function PublicationCard({ publication }: PublicationCardProps) {
-  const typeColors = {
-    journal: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200",
-    conference: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200",
-    workshop: "bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200",
-    preprint: "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200",
-    other: "bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200",
-  };
-
   return (
-    <div className="p-6 border border-gray-200 dark:border-gray-800 rounded-lg">
+    <div className="p-6 border border-border rounded-lg bg-surface">
       <div className="flex items-start justify-between mb-2">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 flex-1">
+        <h3 className="text-lg font-heading font-semibold text-text flex-1">
           {publication.title}
         </h3>
-        <span
-          className={`ml-2 px-2 py-1 text-xs rounded ${
-            typeColors[publication.type] || typeColors.other
-          }`}
-        >
+        <span className="ml-2 px-2 py-1 text-xs rounded bg-accent text-white font-mono">
           {publication.type}
         </span>
       </div>
-      <p className="text-gray-700 dark:text-gray-300 mb-2">
+      <p className="text-text mb-2">
         {publication.authors.join(", ")}
       </p>
-      <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+      <p className="text-meta text-muted mb-4 font-mono">
         {publication.venue} • {publication.year}
       </p>
       {publication.links && (
@@ -42,7 +30,7 @@ export default function PublicationCard({ publication }: PublicationCardProps) {
               href={publication.links.paper}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-blue-600 dark:text-blue-400 hover:underline flex items-center"
+              className="text-sm text-accent hover:underline flex items-center"
             >
               Paper <ExternalLink className="h-3 w-3 ml-1" />
             </Link>
@@ -52,7 +40,7 @@ export default function PublicationCard({ publication }: PublicationCardProps) {
               href={publication.links.scholar}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-blue-600 dark:text-blue-400 hover:underline flex items-center"
+              className="text-sm text-accent hover:underline flex items-center"
             >
               Google Scholar <ExternalLink className="h-3 w-3 ml-1" />
             </Link>
@@ -62,7 +50,7 @@ export default function PublicationCard({ publication }: PublicationCardProps) {
               href={publication.links.arxiv}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-blue-600 dark:text-blue-400 hover:underline flex items-center"
+              className="text-sm text-link-alt hover:underline flex items-center"
             >
               arXiv <ExternalLink className="h-3 w-3 ml-1" />
             </Link>
@@ -72,7 +60,7 @@ export default function PublicationCard({ publication }: PublicationCardProps) {
               href={publication.links.doi}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-blue-600 dark:text-blue-400 hover:underline flex items-center"
+              className="text-sm text-link-alt hover:underline flex items-center"
             >
               DOI <ExternalLink className="h-3 w-3 ml-1" />
             </Link>
