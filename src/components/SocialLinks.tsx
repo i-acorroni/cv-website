@@ -1,4 +1,4 @@
-import { Twitter, Mail, Github, Linkedin, Rss } from "lucide-react";
+import { Twitter, Mail, Github, Linkedin, Rss, GraduationCap } from "lucide-react";
 import Link from "next/link";
 import { SocialLink } from "@/types/content";
 
@@ -40,6 +40,11 @@ function getDefaultSocialLinks(): SocialLink[] {
       url: getSubstackUrl(),
       icon: "substack",
     },
+    {
+      name: "ORCID",
+      url: "https://orcid.org/0009-0008-1703-9506",
+      icon: "orcid",
+    },
   ];
 }
 
@@ -49,6 +54,7 @@ const iconMap = {
   github: Github,
   linkedin: Linkedin,
   substack: Rss, // Using Rss icon for Substack
+  orcid: GraduationCap, // Using GraduationCap icon for ORCID
 };
 
 export default function SocialLinks({ links }: { links?: SocialLink[] }) {
