@@ -32,6 +32,7 @@ export interface Project {
   name: string;
   description: string;
   longDescription?: string;
+  category?: "personal" | "contributed";
   techStack: string[];
   links?: {
     demo?: string;

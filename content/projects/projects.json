@@ -4,6 +4,7 @@
     "name": "CONECTA TJMG",
     "description": "Contributed to the full digitalisation of a Court of Appeal's caseflow, improving the whole Court's digitalisation system, facilitating document access and streamlining internal procedures for judges and court staff. The project was listed in CNJ's national repository of good practices for the public sector.",
     "longDescription": "This project involved the complete digital transformation of a Court of Appeal's caseflow management system. The initiative significantly improved the Court's overall digitalisation infrastructure, making document access more efficient and streamlining internal procedures for both judges and court staff. The project's success and impact led to its recognition in CNJ's (Conselho Nacional de Justiça) national repository of good practices for the public sector.",
+    "category": "contributed",
     "techStack": ["Digital Justice", "Caseflow Management", "Internal Systems"],
     "links": {
       "website": "https://renovajud.cnj.jus.br/conteudo-publico?iniciativa=264"
@@ -16,6 +17,7 @@
     "name": "Data Protection Policy - Legal Design",
     "description": "Worked alongside the Court's Technology Centre and Data Protection Officer, to make the Data Protection Internal Policy accessible to users by using Legal Design and Plain Language techniques. The project was listed in CNJ's national repository of good practices for the public sector.",
     "longDescription": "This project focused on improving accessibility and comprehension of the Court's Data Protection Internal Policy through the application of Legal Design and Plain Language principles. Collaborating with the Court's Technology Centre and Data Protection Officer, the initiative transformed complex legal documentation into more accessible and user-friendly formats, making data protection policies more understandable for all users. The project's innovative approach to legal communication earned recognition in CNJ's (Conselho Nacional de Justiça) national repository of good practices for the public sector.",
+    "category": "contributed",
     "techStack": ["Legal Design", "Plain Language"],
     "links": {
       "website": "https://www.tjmg.jus.br/portal-tjmg/acoes-e-programas/politica-de-privacidade/",
@@ -29,6 +31,7 @@
     "name": "FONÁGIL",
     "description": "Collaborated with Innovation Centres across Brazil to support judges in designing solutions for Special Courts; co-developed five prototypes to be presented at a National Forum, including one selected for nationwide implementation.",
     "longDescription": "FONÁGIL is a national initiative from the Fórum Nacional de Juizados Especiais (Fonaje) that brings together innovation laboratories from multiple courts across Brazil to collaboratively design solutions for challenges faced by Special Courts. Working as part of the UAILab team from TJMG, I collaborated with facilitators from innovation labs in TJDFT, TJRO, TJPE, and TJSC to conduct workshops using Design Thinking and agile methodologies. The project involved facilitating collaborative sessions with judges from across the country, supporting the development of innovative solutions through creative ideation and rapid prototyping. Five prototypes were developed and presented at the National Forum, with one selected for pilot implementation at a state court, with potential for nationwide replication.",
+    "category": "contributed",
     "techStack": ["Design Thinking", "Agile Methodologies", "Innovation Labs"],
     "links": {
       "website": "https://www.tjmg.jus.br/portal-tjmg/noticias/fonagil-realiza-segunda-rodada-de-oficinas-para-promover-inovacao-nos-juizados-especiais.htm"
@@ -40,6 +43,7 @@
     "name": "Example Project",
     "description": "A brief description of your project.",
     "longDescription": "A more detailed description of what the project does, technologies used, and key features.",
+    "category": "contributed",
     "techStack": ["React", "TypeScript", "Next.js"],
     "links": {
       "demo": "https://example.com/demo",
