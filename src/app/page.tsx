@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Rss, GraduationCap, Github, FileText } from "lucide-react";
+import { Mail, Rss, GraduationCap, Github, FileText, Linkedin } from "lucide-react";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex flex-wrap gap-3 mb-6">
           <Link
             href="mailto:izabela@lawtechmixmat.ch"
-            className="px-4 py-2 rounded-lg bg-purple-100 text-purple-800 hover:bg-purple-200 transition-colors text-sm font-medium flex items-center gap-2"
+            className="px-4 py-2 rounded-lg bg-surface border border-border text-text hover:bg-accent hover:text-white hover:border-accent transition-colors text-sm font-medium flex items-center gap-2"
           >
             <Mail className="h-4 w-4" />
             Email
@@ -21,7 +21,7 @@ export default function Home() {
             href={process.env.NEXT_PUBLIC_SUBSTACK_FEED_URL?.replace(/\/feed$/, "") || "https://thelawandtechmixandmatch.substack.com/"}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 rounded-lg bg-purple-100 text-purple-800 hover:bg-purple-200 transition-colors text-sm font-medium flex items-center gap-2"
+            className="px-4 py-2 rounded-lg bg-surface border border-border text-text hover:bg-accent hover:text-white hover:border-accent transition-colors text-sm font-medium flex items-center gap-2"
           >
             <Rss className="h-4 w-4" />
             Substack
@@ -31,7 +31,7 @@ export default function Home() {
             href="https://scholar.google.com/citations?user=o1ALjbEAAAAJ&hl=en"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 rounded-lg bg-purple-100 text-purple-800 hover:bg-purple-200 transition-colors text-sm font-medium flex items-center gap-2"
+            className="px-4 py-2 rounded-lg bg-surface border border-border text-text hover:bg-accent hover:text-white hover:border-accent transition-colors text-sm font-medium flex items-center gap-2"
           >
             <GraduationCap className="h-4 w-4" />
             Scholar
@@ -40,13 +40,20 @@ export default function Home() {
             href="https://github.com/i-acorroni"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 rounded-lg bg-purple-100 text-purple-800 hover:bg-purple-200 transition-colors text-sm font-medium flex items-center gap-2"
+            className="px-4 py-2 rounded-lg bg-surface border border-border text-text hover:bg-accent hover:text-white hover:border-accent transition-colors text-sm font-medium flex items-center gap-2"
           >
             <Github className="h-4 w-4" />
             GitHub
           </Link>
-          
-         
+          <Link
+            href="https://linkedin.com/in/izabela-acorroni"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded-lg bg-surface border border-border text-text hover:bg-accent hover:text-white hover:border-accent transition-colors text-sm font-medium flex items-center gap-2"
+          >
+            <Linkedin className="h-4 w-4" />
+            LinkedIn
+          </Link>
         </div>
         <p className="text-xl text-text mb-6">
         Law & Technology Researcher
