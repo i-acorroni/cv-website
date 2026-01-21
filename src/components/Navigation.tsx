@@ -20,15 +20,9 @@ export default function Navigation() {
     <nav className="border-b border-border">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
-            <Link href="/" className="text-xl font-heading font-semibold text-text">
-              CV Website
-            </Link>
-          </div>
-
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="flex items-baseline space-x-4">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
                 return (
