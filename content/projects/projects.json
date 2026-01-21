@@ -32,10 +32,36 @@
     "description": "Collaborated with Innovation Centres across Brazil to support judges in designing solutions for Special Courts; co-developed five prototypes to be presented at a National Forum, including one selected for nationwide implementation.",
     "longDescription": "FONÁGIL is a national initiative from the Fórum Nacional de Juizados Especiais (Fonaje) that brings together innovation laboratories from multiple courts across Brazil to collaboratively design solutions for challenges faced by Special Courts. Working as part of the UAILab team from TJMG, I collaborated with facilitators from innovation labs in TJDFT, TJRO, TJPE, and TJSC to conduct workshops using Design Thinking and agile methodologies. The project involved facilitating collaborative sessions with judges from across the country, supporting the development of innovative solutions through creative ideation and rapid prototyping. Five prototypes were developed and presented at the National Forum, with one selected for pilot implementation at a state court, with potential for nationwide replication.",
     "category": "contributed",
-    "techStack": ["Design Thinking", "Agile Methodologies", "Innovation Labs"],
+    "techStack": ["Design Thinking", "Agile Methodologies", " Public Sector Innovation"],
     "links": {
       "website": "https://www.tjmg.jus.br/portal-tjmg/noticias/fonagil-realiza-segunda-rodada-de-oficinas-para-promover-inovacao-nos-juizados-especiais.htm"
     },
+    "featured": true
+  },
+  {
+    "id": "lex-connect",
+    "name": "Lex Connect",
+    "description": "A legal clarity tool for non-lawyers: a web app where you ask a legal question, it runs your issue through multiple AI models, compares their answers, and turns that into a clear, structured summary in plain language, that shows where models agree and disagree.",
+    "longDescription": "Lex Connect is a legal clarity tool designed to make legal information accessible to non-lawyers. Users can ask legal questions through a web interface, and the application processes their queries through multiple AI models simultaneously. The system then compares the responses from different models, identifying areas of agreement and disagreement, and presents the results in a clear, structured summary using plain language. This approach helps users understand legal concepts without needing legal expertise, while also providing transparency about how different AI models interpret the same question.",
+    "category": "personal",
+    "techStack": ["Web App", "AI Models", "Legal Tech", "Programming"],
+    "links": {
+      "github": "https://github.com/i-acorroni/lex-connect"
+    },
+    "image": "/images/lex-connect.jpg",
+    "featured": true
+  },
+  {
+    "id": "lingua",
+    "name": "LINGUA",
+    "description": "LINGUA, an acronym for Language Inclusion Network for Global Understanding & Advocacy, is an international research collective founded by scholars from Brazil, Belarus, Kenya and Egypt, with the mission to promote language justice in digital spaces. Through interdisciplinary research, LINGUA investigates how platform design, machine translation, and digital policy can either reinforce language barriers or foster truly inclusive digital environments.",
+    "longDescription": "LINGUA (Language Inclusion Network for Global Understanding & Advocacy) is an international research collective founded by scholars from Brazil, Belarus, Kenya, and Egypt, dedicated to promoting language justice in digital spaces. The name 'Lingua' honors the Latin root meaning 'tongue' or 'language', recognizing that communication encompasses identity, heritage, and understanding beyond mere words. Through interdisciplinary research, LINGUA investigates how platform design, machine translation, and digital policy can either reinforce language barriers or foster truly inclusive digital environments. The collective collaborates with tech developers, policymakers, and grassroots organizations to pilot multilingual tools, publish white papers on digital accessibility, and host workshops that bring together underrepresented language communities. LINGUA's mission is to shape a future where language is never a barrier and where every voice has the power to be heard.",
+    "category": "personal",
+    "techStack": ["Language Justice", "Research", "Digital Policy", "Platform Design"],
+    "links": {
+      "website": "https://www.linkedin.com/company/lab-lingua"
+    },
+    "image": "/images/lingua.jpg",
     "featured": true
   },
   {
