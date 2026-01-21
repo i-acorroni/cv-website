@@ -66,12 +66,10 @@ export default function Home() {
           About
         </h2>
         <div className="prose prose-lg max-w-none">
-          <p className="text-text mb-4">I work at the intersection of digital regulation, platform governance, and law’s evolving relationship with technology. My current focus is how platforms operationalise rules—through policies, enforcement workflows, and technical design—and what this means for due process, accountability, and privacy.
-          Graduated with distinction from the LLM in Law and New Technologies at Birkbeck, University of London, where I was awarded the Global Futures Scholarship and the Academic Excellence
-          Award for Best Overall Postgraduate Law Student.
+          <p className="text-text mb-4">  A Brazilian legal scholar who has been engaged in academic research since 2015, and dedicated to studying the intersection of law and technology since 2020. Holding both a law degree and a secondary technical education in technology, she navigates easily between legal theory and technical implementation. 
           </p>
           <p className="text-text mb-4">
-            
+          Graduated with distinction from the LLM in Law and New Technologies at Birkbeck University of London, where she received the Global Futures Scholarship and the Academic Excellence Award for Best Overall Postgraduate Law Student.
           </p>
           
           <h3 className="text-xl font-heading font-semibold text-text mt-8 mb-4">
@@ -80,9 +78,9 @@ export default function Home() {
           <ul className="list-disc list-inside text-text space-y-2">
             <li>Platform governance: how platforms operationalise rules through policies, enforcement workflows, and technical design</li>
             <li>Implications of the use of AI systems in legal decision-making</li>
-            <li> Law as Code vs. Code as Law</li>
+            <li>Law as Code vs. Code as Law</li>
             <li>Algorithmic regulation</li>
-            <li>EU digital regulatory framework and compliance design</li>
+            <li>Leveraging technology to enhance access to justice</li>
           </ul>
 
           <h3 className="text-xl font-heading font-semibold text-text mt-8 mb-4">
@@ -90,9 +88,10 @@ export default function Home() {
           </h3>
           <ul className="list-disc list-inside text-text space-y-2">
             <li><b>Research maturity:</b> over a decade of research experience, with sustained focus on law&tech questions since 2020.</li>
-            <li><b>Justice systems experience:</b> former legal consultant at a Brazilian State Court of Justice (TJMG), former legal consultant at Brazil’s State Court of Justice (TJMG), leading and supporting projects on technology adoption, access to justice, and service design.</li>
-            <li><b>Interdisciplinarity:</b> experience working across legal theory, regulation, and socio-technical infrastructures, bridging doctrinal analysis with implementation realities.</li>
-            <li><b>Technical fluency:</b> a tecnólogo background that supports engagement with technical subjects, and occasional coding to prototype and test ideas.</li>
+            <li><b>Justice systems experience:</b> former legal consultant at a Brazilian State Court of Justice (TJMG), leading and supporting projects on technology adoption, access to justice, and service design.</li>
+            <li><b>Policy-making experience:</b> conducted research on policy-making for three years at the Legal Centre for Public Policies at Pontifical Catholic University of Minas Gerais; participated at the Young Thinkers 2025 Training Programme at Centre for European Policy Studies (CEPS).</li>
+            <li><b>Interdisciplinarity:</b> experience working across legal theory, regulatory environments, and socio-technical infrastructures, bridging doctrinal analysis with implementation realities.</li>
+            <li><b>Technical fluency:</b> a tecnólogo background that supports engagement with technical subjects, and coding skills to prototype and test ideas.</li>
           </ul>
         </div>
       </section>
