@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "CV",
+  description: "Curriculum Vitae for Izabela Acorroni.",
+  pathname: "/cv",
+});
+
 export default function CVPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -17,4 +26,3 @@ export default function CVPage() {
     </div>
   );
 }
-

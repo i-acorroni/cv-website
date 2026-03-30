@@ -1,4 +1,7 @@
+import type { Metadata } from "next";
 import { getAllSubstackPosts, getSubstackPost } from "@/lib/content";
+import { createPageMetadata } from "@/lib/metadata";
+import { getAbsoluteUrl } from "@/lib/site";
 import { format } from "date-fns";
 import { Clock, ArrowLeft, ExternalLink } from "lucide-react";
 import Link from "next/link";
@@ -13,6 +16,50 @@ export async function generateStaticParams() {
   return posts.map((post) => ({
     slug: post.slug,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: SubstackPostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = await getSubstackPost(slug);
+
+  if (!post) {
+    return createPageMetadata({
+      title: "Substack",
+      description:
+        "Recent writing from The Law and Tech Mix & Match by Izabela Acorroni.",
+      pathname: "/substack",
+    });
+  }
+
+  const metadata = createPageMetadata({
+    title: post.title,
+    description: post.excerpt || "Originally published on Substack.",
+    pathname: `/substack/${slug}`,
+  });
+  const canonicalUrl = post.link || getAbsoluteUrl(`/substack/${slug}`);
+
+  return {
+    ...metadata,
+    alternates: canonicalUrl
+      ? {
+          canonical: canonicalUrl,
+        }
+      : metadata.alternates,
+    robots: post.link
+      ? {
+          index: false,
+          follow: true,
+        }
+      : undefined,
+    openGraph: {
+      ...metadata.openGraph,
+      type: "article",
+      url: canonicalUrl,
+      publishedTime: post.date,
+    },
+  };
 }
 
 export default async function SubstackPostPage({ params }: SubstackPostPageProps) {
@@ -71,4 +118,3 @@ export default async function SubstackPostPage({ params }: SubstackPostPageProps
     </div>
   );
 }
-

@@ -1,5 +1,6 @@
-const DEFAULT_SITE_NAME = "CV Website";
-const DEFAULT_SITE_DESCRIPTION = "Professional CV and portfolio website";
+const DEFAULT_SITE_NAME = "Izabela Acorroni";
+const DEFAULT_SITE_DESCRIPTION =
+  "Law and technology researcher sharing publications, projects, writing, and a CV.";
 
 export function getSiteName(): string {
   return process.env.NEXT_PUBLIC_SITE_NAME?.trim() || DEFAULT_SITE_NAME;
@@ -25,4 +26,24 @@ export function getSiteUrl(): URL | undefined {
   } catch {
     return undefined;
   }
+}
+
+export function getSiteOrigin(): string | undefined {
+  const siteUrl = getSiteUrl();
+
+  if (!siteUrl) {
+    return undefined;
+  }
+
+  return siteUrl.origin;
+}
+
+export function getAbsoluteUrl(pathname: string = "/"): string | undefined {
+  const siteUrl = getSiteUrl();
+
+  if (!siteUrl) {
+    return undefined;
+  }
+
+  return new URL(pathname, siteUrl).toString();
 }

@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import { getAllBlogPosts } from "@/lib/content";
+import { createPageMetadata } from "@/lib/metadata";
 import BlogCard from "@/components/BlogCard";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Blog",
+  description: "Local blog posts and notes by Izabela Acorroni.",
+  pathname: "/blog",
+});
 
 export default function BlogPage() {
   const posts = getAllBlogPosts();
@@ -22,4 +30,3 @@ export default function BlogPage() {
     </div>
   );
 }
-

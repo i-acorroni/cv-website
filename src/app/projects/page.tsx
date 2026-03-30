@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import { getAllProjects } from "@/lib/content";
+import { createPageMetadata } from "@/lib/metadata";
 import ProjectCard from "@/components/ProjectCard";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Projects",
+  description:
+    "Selected legal tech, research, and public-sector innovation projects by Izabela Acorroni.",
+  pathname: "/projects",
+});
 
 export default function ProjectsPage() {
   const projects = getAllProjects();
@@ -51,4 +60,3 @@ export default function ProjectsPage() {
     </div>
   );
 }
-

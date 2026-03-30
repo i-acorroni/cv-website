@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Mail, Rss, GraduationCap, Github, FileText, Linkedin } from "lucide-react";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = createPageMetadata({
+  description:
+    "Law and technology research by Izabela Acorroni, including publications, projects, writing, and a downloadable CV.",
+  pathname: "/",
+});
 
 export default function Home() {
   return (
@@ -98,4 +106,3 @@ export default function Home() {
     </div>
   );
 }
-

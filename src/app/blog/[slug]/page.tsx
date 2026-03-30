@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import { getAllBlogPosts, getBlogPost } from "@/lib/content";
+import { createPageMetadata } from "@/lib/metadata";
 import { getMarkdownContent } from "@/lib/markdown";
 import { format } from "date-fns";
 import { Clock, ArrowLeft } from "lucide-react";
@@ -14,6 +16,36 @@ export async function generateStaticParams() {
   return posts.map((post) => ({
     slug: post.slug,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getBlogPost(slug);
+
+  if (!post) {
+    return createPageMetadata({
+      title: "Blog",
+      description: "Local blog posts and notes by Izabela Acorroni.",
+      pathname: "/blog",
+    });
+  }
+
+  const metadata = createPageMetadata({
+    title: post.title,
+    description: post.excerpt || "Local blog post by Izabela Acorroni.",
+    pathname: `/blog/${slug}`,
+  });
+
+  return {
+    ...metadata,
+    openGraph: {
+      ...metadata.openGraph,
+      type: "article",
+      publishedTime: post.date,
+    },
+  };
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
@@ -82,4 +114,3 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     </div>
   );
 }
-

@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import { getAllPublications } from "@/lib/content";
+import { createPageMetadata } from "@/lib/metadata";
 import PublicationCard from "@/components/PublicationCard";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Publications",
+  description:
+    "Academic publications, chapters, and essays by Izabela Acorroni.",
+  pathname: "/publications",
+});
 
 export default function PublicationsPage() {
   const publications = getAllPublications();
@@ -52,4 +61,3 @@ export default function PublicationsPage() {
     </div>
   );
 }
-
