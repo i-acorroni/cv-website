@@ -6,6 +6,51 @@ import { calculateReadingTime } from "./markdown";
 
 const contentDirectory = path.join(process.cwd(), "content");
 
+// Blog posts (local markdown content)
+export function getAllBlogPosts(): BlogPost[] {
+  try {
+    const blogDirectory = path.join(contentDirectory, "blog");
+
+    if (!fs.existsSync(blogDirectory)) {
+      return [];
+    }
+
+    const posts = fs
+      .readdirSync(blogDirectory)
+      .filter((file) => file.endsWith(".md"))
+      .map((file) => {
+        const slug = file.replace(/\.md$/, "");
+        const fullPath = path.join(blogDirectory, file);
+        const fileContents = fs.readFileSync(fullPath, "utf8");
+        const { data, content } = matter(fileContents);
+        const tags = Array.isArray(data.tags)
+          ? data.tags.filter((tag): tag is string => typeof tag === "string")
+          : [];
+
+        return {
+          slug,
+          title: typeof data.title === "string" ? data.title : slug,
+          date:
+            typeof data.date === "string" ? data.date : new Date(0).toISOString(),
+          excerpt: typeof data.excerpt === "string" ? data.excerpt : undefined,
+          tags,
+          content,
+          readingTime: calculateReadingTime(content),
+        };
+      });
+
+    return posts.sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
+  } catch {
+    return [];
+  }
+}
+
+export function getBlogPost(slug: string): BlogPost | null {
+  return getAllBlogPosts().find((post) => post.slug === slug) || null;
+}
+
 // Substack posts (using RSS feed)
 export async function getAllSubstackPosts(): Promise<BlogPost[]> {
   const { fetchSubstackPosts } = await import("./substack");
@@ -49,4 +94,3 @@ export function getAllProjects(): Project[] {
     return [];
   }
 }
-

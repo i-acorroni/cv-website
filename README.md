@@ -88,9 +88,11 @@ Update the following files to customize your site:
 
 ### Environment Setup
 
-1. Create `.env.local` file with your Substack RSS feed URL:
+1. Copy `.env.example` to `.env.local` and update the values:
    ```env
    NEXT_PUBLIC_SUBSTACK_FEED_URL=https://yourpublication.substack.com/feed
+   NEXT_PUBLIC_SITE_URL=https://example.com
+   NEXT_PUBLIC_SITE_NAME=Your Name
    ```
 
 2. Install dependencies:
@@ -122,9 +124,11 @@ Update the following files to customize your site:
 
 1. Push your code to GitHub/GitLab/Bitbucket
 2. Sign up at [vercel.com](https://vercel.com) and import your repository
-3. Add environment variable `NEXT_PUBLIC_SUBSTACK_FEED_URL` in Vercel dashboard
+3. Add environment variables `NEXT_PUBLIC_SUBSTACK_FEED_URL`, `NEXT_PUBLIC_SITE_URL`, and `NEXT_PUBLIC_SITE_NAME` in the Vercel dashboard
 4. Deploy - Vercel auto-detects Next.js and handles everything
-5. Every push to `main` branch automatically deploys
+5. Add your apex domain and `www` in the Vercel Domains settings
+6. Update your DNS records at your registrar to the values shown by Vercel
+7. Every push to `main` branch automatically deploys
 
 ### Other Platforms
 
@@ -133,10 +137,13 @@ Update the following files to customize your site:
 
 ### Environment Variables in Production
 
-Make sure to add `NEXT_PUBLIC_SUBSTACK_FEED_URL` in your hosting platform's environment variables settings.
+Make sure to add these variables in your hosting platform's environment variables settings:
+
+- `NEXT_PUBLIC_SUBSTACK_FEED_URL`
+- `NEXT_PUBLIC_SITE_URL`
+- `NEXT_PUBLIC_SITE_NAME`
 
 ## License
 
 This project is open source and available under the MIT License.
-
 
