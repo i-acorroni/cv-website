@@ -7,7 +7,8 @@ import { calculateReadingTime } from "./markdown";
 const contentDirectory = path.join(process.cwd(), "content");
 
 function getDateTimestamp(date: string): number {
-  const timestamp = new Date(date).getTime();
+  const normalizedDate = /^\d{4}$/.test(date) ? `${date}-01-01` : date;
+  const timestamp = new Date(normalizedDate).getTime();
   return Number.isNaN(timestamp) ? 0 : timestamp;
 }
 

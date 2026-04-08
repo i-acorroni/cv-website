@@ -16,21 +16,25 @@ function formatLabel(value: string): string {
 }
 
 function formatTalkDate(date: string): string {
+  if (/^\d{4}$/.test(date)) {
+    return date;
+  }
+
   const parsedDate = parseISO(date);
 
   if (!isValid(parsedDate)) {
     return date;
   }
 
-  return format(parsedDate, "MMMM d, yyyy");
+  return format(parsedDate, "yyyy");
 }
 
 function getEventLine(talk: Talk): string {
-  if (!talk.organisation || talk.organisation === talk.event) {
-    return talk.event;
+  if (talk.event && talk.organisation && talk.organisation !== talk.event) {
+    return `${talk.event} • ${talk.organisation}`;
   }
 
-  return `${talk.event} • ${talk.organisation}`;
+  return talk.event || talk.organisation;
 }
 
 export default function TalkCard({
