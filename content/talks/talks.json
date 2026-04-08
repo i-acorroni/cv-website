@@ -2,7 +2,7 @@
   {
     "id": "innovation-in-public-sector-conference-talk",
     "title": "Innovation in the Judicial System in Brazil",
-    "type": "conference-talk",
+    "type": "conference-speaker",
     "event": "III International Congress of Law and Artificial Intelligence",
     "organisation": "Skema Business School Brazil",
     "date": "2023",
@@ -11,29 +11,27 @@
     "description": "Conference talk on how the Brazilian Judicial System is embracing technology to improve access to justice and efficiency.",
     "themes": [
       "Innovation",
-      "Technology in the Judicial System",
       "Digital Transformation"
     ],
     "videoUrl": "https://www.youtube.com/live/4J_-iVNGlNA",
     "featured": true
   },
   {
-    "id": "responsible-ai-access-to-justice-workshop",
-    "title": "Designing Responsible AI for Access to Justice",
-    "type": "workshop",
-    "event": "Public Sector Innovation Workshop Series",
-    "organisation": "Tribunal Innovation Lab",
+    "id": "ai-facial-recognition-talk",
+    "title": "The Problem of Automated Facial Recognition Technologies in Brazil: Social Countermovements and the New Frontiers of Fundamental Rights",
+    "type": "speaker",
+    "event": "DTEC talk series",
+    "organisation": "Federal University of Minas Gerais",
     "date": "2025",
-    "location": "Belo Horizonte, Brazil",
+    "location": "Online",
     "language": "portuguese",
-    "description": "Sample workshop on AI adoption in justice systems, with a focus on service design, safeguards, and institutional implementation. Replace this with your actual workshop description.",
+    "description": "Presented an analysis of automated facial recognition in Brazil, examining its implications for privacy, discrimination, surveillance, and the role of social countermovements in contesting the expansion of high-risk AI systems.",
     "themes": [
-      "Access to justice",
-      "AI governance",
-      "Public sector innovation"
+      "Automated Facial Recognition",
+      "Fundamental Rights",
+      "AI Governance"
     ],
-    "link": "https://example.com/ai-justice-workshop",
-    "videoUrl": "https://example.com/ai-justice-workshop-recording",
+    "powerpointUrl": "https://canva.link/lof6c88ulr5sj40",
     "featured": true
   },
   {
