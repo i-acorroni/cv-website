@@ -34,23 +34,7 @@
     "slidesUrl": "https://canva.link/lof6c88ulr5sj40",
     "featured": true
   },
-  {
-    "id": "codex-to-code-lecture",
-    "title": "From Codex to Code: Normativity, Automation, and Legal Design",
-    "type": "lecture",
-    "event": "Law and Technology Lecture Series",
-    "organisation": "Faculty of Law",
-    "date": "2024",
-    "location": "Online",
-    "language": "english",
-    "description": "Sample invited lecture examining how legal rules shift when expressed through software, standards, and product decisions. Replace this with the final lecture description.",
-    "themes": [
-      "Law as code",
-      "Legal design",
-      "Socio-technical systems"
-    ],
-    "videoUrl": "https://example.com/codex-to-code-lecture-recording"
-  },
+  
   {
     "id": "language-justice-workshop",
     "title": "Language Justice in Digital Spaces",
