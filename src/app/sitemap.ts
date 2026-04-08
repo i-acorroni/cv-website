@@ -29,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     buildEntry("/", { changeFrequency: "weekly", priority: 1 }),
     buildEntry("/cv", { changeFrequency: "monthly", priority: 0.8 }),
     buildEntry("/publications", { changeFrequency: "monthly", priority: 0.9 }),
+    buildEntry("/talks", { changeFrequency: "monthly", priority: 0.8 }),
     buildEntry("/projects", { changeFrequency: "monthly", priority: 0.8 }),
     buildEntry("/blog", { changeFrequency: "monthly", priority: 0.7 }),
     buildEntry("/substack", { changeFrequency: "weekly", priority: 0.7 }),

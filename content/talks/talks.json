@@ -1,0 +1,74 @@
+[
+  {
+    "id": "platform-governance-conference-talk",
+    "title": "Platform Governance Beyond Terms of Service",
+    "type": "conference-talk",
+    "event": "Digital Policy and Platform Governance Conference",
+    "organisation": "Birkbeck University of London",
+    "date": "2025-11-21",
+    "location": "London, United Kingdom",
+    "language": "english",
+    "description": "Sample conference talk on how platforms translate policy into moderation workflows, interface design, and enforcement practices. Replace this with the final event summary.",
+    "themes": [
+      "Platform governance",
+      "Content moderation",
+      "Digital regulation"
+    ],
+    "link": "https://example.com/platform-governance-conference",
+    "slidesUrl": "https://example.com/platform-governance-slides.pdf",
+    "featured": true
+  },
+  {
+    "id": "responsible-ai-access-to-justice-workshop",
+    "title": "Designing Responsible AI for Access to Justice",
+    "type": "workshop",
+    "event": "Public Sector Innovation Workshop Series",
+    "organisation": "Tribunal Innovation Lab",
+    "date": "2025-06-12",
+    "location": "Belo Horizonte, Brazil",
+    "language": "portuguese",
+    "description": "Sample workshop on AI adoption in justice systems, with a focus on service design, safeguards, and institutional implementation. Replace this with your actual workshop description.",
+    "themes": [
+      "Access to justice",
+      "AI governance",
+      "Public sector innovation"
+    ],
+    "link": "https://example.com/ai-justice-workshop",
+    "videoUrl": "https://example.com/ai-justice-workshop-recording",
+    "featured": true
+  },
+  {
+    "id": "codex-to-code-lecture",
+    "title": "From Codex to Code: Normativity, Automation, and Legal Design",
+    "type": "lecture",
+    "event": "Law and Technology Lecture Series",
+    "organisation": "Faculty of Law",
+    "date": "2024-10-03",
+    "location": "Online",
+    "language": "english",
+    "description": "Sample invited lecture examining how legal rules shift when expressed through software, standards, and product decisions. Replace this with the final lecture description.",
+    "themes": [
+      "Law as code",
+      "Legal design",
+      "Socio-technical systems"
+    ],
+    "videoUrl": "https://example.com/codex-to-code-lecture-recording"
+  },
+  {
+    "id": "language-justice-panel",
+    "title": "Language Justice in Digital Spaces",
+    "type": "panel",
+    "event": "Global Internet Governance Forum",
+    "organisation": "LINGUA Research Collective",
+    "date": "2024-04-19",
+    "location": "Athens, Greece",
+    "language": "english",
+    "description": "Sample panel contribution on multilingual access, platform design, and the barriers created by language asymmetries online. Replace this with your actual panel summary.",
+    "themes": [
+      "Language justice",
+      "Internet governance",
+      "Digital inclusion"
+    ],
+    "link": "https://example.com/language-justice-panel"
+  }
+]

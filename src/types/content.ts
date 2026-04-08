@@ -43,6 +43,39 @@ export interface Project {
   featured?: boolean;
 }
 
+export type TalkType =
+  | "conference-talk"
+  | "invited-talk"
+  | "workshop"
+  | "panel"
+  | "lecture"
+  | "presentation";
+
+export type TalkLanguage =
+  | "english"
+  | "portuguese"
+  | "spanish"
+  | "french"
+  | "bilingual"
+  | "other";
+
+export interface Talk {
+  id: string;
+  title: string;
+  type: TalkType;
+  event: string;
+  organisation: string;
+  date: string;
+  location: string;
+  language: TalkLanguage;
+  description: string;
+  themes: string[];
+  link?: string;
+  videoUrl?: string;
+  slidesUrl?: string;
+  featured?: boolean;
+}
+
 export interface SocialLink {
   name: string;
   url: string;
@@ -64,4 +97,3 @@ export interface SiteConfig {
   };
   social: SocialLink[];
 }
-

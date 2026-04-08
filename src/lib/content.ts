@@ -1,10 +1,15 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { BlogPost, Publication, Project } from "@/types/content";
+import { BlogPost, Publication, Project, Talk } from "@/types/content";
 import { calculateReadingTime } from "./markdown";
 
 const contentDirectory = path.join(process.cwd(), "content");
+
+function getDateTimestamp(date: string): number {
+  const timestamp = new Date(date).getTime();
+  return Number.isNaN(timestamp) ? 0 : timestamp;
+}
 
 // Blog posts (local markdown content)
 export function getAllBlogPosts(): BlogPost[] {
@@ -74,7 +79,7 @@ export function getAllPublications(): Publication[] {
     const fileContents = fs.readFileSync(publicationsPath, "utf8");
     const publications: Publication[] = JSON.parse(fileContents);
     return publications.sort((a, b) => b.year - a.year);
-  } catch (error) {
+  } catch {
     return [];
   }
 }
@@ -90,7 +95,37 @@ export function getAllProjects(): Project[] {
       if (!a.featured && b.featured) return 1;
       return 0;
     });
-  } catch (error) {
+  } catch {
     return [];
   }
+}
+
+// Talks
+export function getAllTalks(): Talk[] {
+  try {
+    const talksPath = path.join(contentDirectory, "talks", "talks.json");
+    const fileContents = fs.readFileSync(talksPath, "utf8");
+    const talks: Talk[] = JSON.parse(fileContents);
+
+    return talks.sort(
+      (a, b) => getDateTimestamp(b.date) - getDateTimestamp(a.date)
+    );
+  } catch {
+    return [];
+  }
+}
+
+export function getFeaturedTalks(limit: number = 3): Talk[] {
+  const talks = getAllTalks();
+  const featuredTalks = talks.filter((talk) => talk.featured);
+
+  if (featuredTalks.length >= limit) {
+    return featuredTalks.slice(0, limit);
+  }
+
+  const fallbackTalks = talks
+    .filter((talk) => !talk.featured)
+    .slice(0, limit - featuredTalks.length);
+
+  return [...featuredTalks, ...fallbackTalks];
 }

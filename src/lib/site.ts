@@ -1,6 +1,6 @@
 const DEFAULT_SITE_NAME = "Izabela Acorroni";
 const DEFAULT_SITE_DESCRIPTION =
-  "Law and technology researcher sharing publications, projects, writing, and a CV.";
+  "Law and technology researcher sharing talks, publications, projects, writing, and a CV.";
 
 export function getSiteName(): string {
   return process.env.NEXT_PUBLIC_SITE_NAME?.trim() || DEFAULT_SITE_NAME;

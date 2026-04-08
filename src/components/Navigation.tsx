@@ -4,20 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-
-const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/cv", label: "CV" },
-  { href: "/publications", label: "Publications" },
-  { href: "/projects", label: "Projects" },
-];
+import { navItems } from "@/lib/navigation";
 
 export default function Navigation() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="border-b border-border">
+    <nav className="border-b border-border" aria-label="Primary">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Desktop Navigation */}
@@ -47,9 +41,12 @@ export default function Navigation() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-muted hover:text-text hover:bg-border focus:outline-none"
-              aria-expanded="false"
+              aria-expanded={isOpen}
+              aria-controls="mobile-navigation"
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">
+                {isOpen ? "Close main menu" : "Open main menu"}
+              </span>
               {isOpen ? (
                 <X className="block h-6 w-6" aria-hidden="true" />
               ) : (
@@ -62,7 +59,7 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden">
+        <div className="md:hidden" id="mobile-navigation">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-border">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
@@ -87,4 +84,3 @@ export default function Navigation() {
     </nav>
   );
 }
-
