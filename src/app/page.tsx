@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Mail, Rss, GraduationCap, Github, Linkedin } from "lucide-react";
 import { createPageMetadata } from "@/lib/metadata";
-import TalkCard from "@/components/TalkCard";
-import { getFeaturedTalks } from "@/lib/content";
 
 export const metadata: Metadata = createPageMetadata({
   description:
@@ -12,8 +10,6 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default function Home() {
-  const featuredTalks = getFeaturedTalks(3);
-
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Hero Section */}
@@ -107,37 +103,6 @@ export default function Home() {
           </ul>
         </div>
       </section>
-
-      {featuredTalks.length > 0 && (
-        <section className="mb-16">
-          <div className="flex flex-col gap-4 mb-6 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <h2 className="text-h2 font-heading font-semibold text-text mb-2">
-                Talks
-              </h2>
-              <p className="max-w-2xl text-text">
-                Selected talks, workshops, panels, and lectures connected to my
-                research and professional work.
-              </p>
-            </div>
-
-            <Link
-              href="/talks"
-              className="text-sm font-medium text-accent hover:underline"
-            >
-              View all talks
-            </Link>
-          </div>
-
-          <ul className="grid gap-6 lg:grid-cols-2">
-            {featuredTalks.map((talk) => (
-              <li key={talk.id}>
-                <TalkCard talk={talk} showThemes={false} />
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
     </div>
   );
 }
