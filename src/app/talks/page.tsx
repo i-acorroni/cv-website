@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import TalksCollection from "@/components/TalksCollection";
+import TalkCard from "@/components/TalkCard";
 import { getAllTalks } from "@/lib/content";
 import { createPageMetadata } from "@/lib/metadata";
 
@@ -30,7 +30,13 @@ export default function TalksPage() {
           No talks available yet. Add talks in content/talks/talks.json
         </p>
       ) : (
-        <TalksCollection talks={talks} />
+        <ul className="grid gap-6 lg:grid-cols-2">
+          {talks.map((talk) => (
+            <li key={talk.id}>
+              <TalkCard talk={talk} />
+            </li>
+          ))}
+        </ul>
       )}
     </div>
   );
