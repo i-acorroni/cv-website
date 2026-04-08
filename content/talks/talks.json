@@ -1,21 +1,20 @@
 [
   {
-    "id": "platform-governance-conference-talk",
-    "title": "Platform Governance Beyond Terms of Service",
+    "id": "innovation-in-public-sector-conference-talk",
+    "title": "Innovation in the Judicial System in Brazil",
     "type": "conference-talk",
-    "event": "Digital Policy and Platform Governance Conference",
-    "organisation": "Birkbeck University of London",
-    "date": "2025-11-21",
-    "location": "London, United Kingdom",
-    "language": "english",
-    "description": "Sample conference talk on how platforms translate policy into moderation workflows, interface design, and enforcement practices. Replace this with the final event summary.",
+    "event": "III International Congress of Law and Artificial Intelligence",
+    "organisation": "Skema Business School Brazil",
+    "date": "2023",
+    "location": "Belo Horizonte, Brazil",
+    "language": "portuguese",
+    "description": "Conference talk on how the Brazilian Judicial System is embracing technology to improve access to justice and efficiency.",
     "themes": [
-      "Platform governance",
-      "Content moderation",
-      "Digital regulation"
+      "Innovation",
+      "Technology in the Judicial System",
+      "Digital Transformation"
     ],
-    "link": "https://example.com/platform-governance-conference",
-    "slidesUrl": "https://example.com/platform-governance-slides.pdf",
+    "link": "https://www.youtube.com/live/4J_-iVNGlNA",
     "featured": true
   },
   {
