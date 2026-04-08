@@ -14,7 +14,7 @@
       "Technology in the Judicial System",
       "Digital Transformation"
     ],
-    "link": "https://www.youtube.com/live/4J_-iVNGlNA",
+    "videoUrl": "https://www.youtube.com/live/4J_-iVNGlNA",
     "featured": true
   },
   {
@@ -54,18 +54,17 @@
     "videoUrl": "https://example.com/codex-to-code-lecture-recording"
   },
   {
-    "id": "language-justice-panel",
+    "id": "language-justice-workshop",
     "title": "Language Justice in Digital Spaces",
-    "type": "panel",
-    "event": "Global Internet Governance Forum",
+    "type": "workshop",
     "organisation": "LINGUA Research Collective",
-    "date": "2024-04-19",
-    "location": "Athens, Greece",
+    "date": "12-04-2026",
+    "location": "Network School, Malaysia",
     "language": "english",
-    "description": "Sample panel contribution on multilingual access, platform design, and the barriers created by language asymmetries online. Replace this with your actual panel summary.",
+    "description": "Practical workshop on how language justice can be achieved in digital spaces, with a focus on multilingual access, platform design, and the barriers created by language asymmetries online.",
     "themes": [
       "Language justice",
-      "Internet governance",
+      "Platform design",
       "Digital inclusion"
     ],
     "link": "https://example.com/language-justice-panel"
