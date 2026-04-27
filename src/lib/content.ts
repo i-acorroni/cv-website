@@ -7,7 +7,16 @@ import { calculateReadingTime } from "./markdown";
 const contentDirectory = path.join(process.cwd(), "content");
 
 function getDateTimestamp(date: string): number {
-  const normalizedDate = /^\d{4}$/.test(date) ? `${date}-01-01` : date;
+  const trimmedDate = date.trim();
+  const yearRangeMatch = trimmedDate.match(/^(\d{4})\s*[–-]\s*(\d{4})$/);
+
+  if (yearRangeMatch) {
+    return new Date(`${yearRangeMatch[2]}-12-31`).getTime();
+  }
+
+  const normalizedDate = /^\d{4}$/.test(trimmedDate)
+    ? `${trimmedDate}-01-01`
+    : trimmedDate;
   const timestamp = new Date(normalizedDate).getTime();
   return Number.isNaN(timestamp) ? 0 : timestamp;
 }

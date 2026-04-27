@@ -45,11 +45,14 @@ export interface Project {
 
 export type TalkType =
   | "conference-talk"
+  | "conference-speaker"
   | "invited-talk"
   | "workshop"
+  | "workshop-series"
   | "panel"
   | "lecture"
-  | "presentation";
+  | "presentation"
+  | "speaker";
 
 export type TalkLanguage =
   | "english"

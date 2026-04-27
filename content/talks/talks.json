@@ -50,5 +50,23 @@
       "Access to Justice"
     ],
     "videoUrl": "https://www.youtube.com/watch?v=jZylpcrnXr0&t=9728s"
+  },
+  {
+    "id": "design-thinking-workshops-for-implementation-of-technology-in-court-procedures",
+    "title": "Design Thinking Workshops for the Implementation of Technology in Court Procedures",
+    "type": "workshop-series",
+    "event": "State Court of Justice of Minas Gerais, Brazil",
+    "organisation": "State Court of Justice of Minas Gerais, Brazil",
+    "date": "2021–2023",
+    "location": "Minas Gerais, Brazil",
+    "language": "portuguese",
+    "description": "Between 2021 and 2023, I conducted several design thinking workshops with magistrates, judges, court clerks, and administrative staff at the State Court of Justice of Minas Gerais. These workshops mapped institutional and procedural problems, translated them into practical requirements, and supported the implementation of technologies aimed at improving judicial services, internal workflows, usability, and access to justice.",
+    "themes": [
+      "Design Thinking",
+      "Judicial Innovation",
+      "Technology in Courts",
+      "Access to Justice",
+      "Public Sector Innovation"
+    ]
   }
 ]
