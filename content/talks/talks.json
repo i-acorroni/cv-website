@@ -34,21 +34,21 @@
     "slidesUrl": "https://canva.link/lof6c88ulr5sj40",
     "featured": true
   },
-  
   {
-    "id": "language-justice-workshop",
-    "title": "Language Justice in Digital Spaces",
-    "type": "workshop",
-    "organisation": "LINGUA Research Collective",
-    "date": "2026",
-    "location": "Network School, Malaysia",
-    "language": "english",
-    "description": "Practical workshop on how language justice can be achieved in digital spaces, with a focus on multilingual access, platform design, and the barriers created by language asymmetries online.",
+    "id": "innovation-in-the-court-of-justice-talk",
+    "title": "Innovation in the Court of Justice",
+    "type": "conference-talk",
+    "event": "I Encontro Mineiro de Laboratórios de Inovação",
+    "organisation": "UAILab, Tribunal de Justiça de Minas Gerais",
+    "date": "November 2022",
+    "location": "Brazil",
+    "language": "portuguese",
+    "description": "Talk on innovation in the judiciary, drawing on my work at the Innovation Centre of the State Court of Justice of Minas Gerais. I discussed how innovation initiatives can improve judicial services, institutional procedures, user experience, and access to justice within public courts.",
     "themes": [
-      "Language justice",
-      "Platform design",
-      "Digital inclusion"
+      "Judicial Innovation",
+      "Public Service Design",
+      "Access to Justice"
     ],
-    "link": "https://example.com/language-justice-panel"
+    "videoUrl": "https://www.youtube.com/watch?v=jZylpcrnXr0&t=9728s"
   }
 ]
