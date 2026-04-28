@@ -62,6 +62,12 @@ export type TalkLanguage =
   | "bilingual"
   | "other";
 
+export interface TalkRelatedReport {
+  description: string;
+  label: string;
+  url: string;
+}
+
 export interface Talk {
   id: string;
   title: string;
@@ -76,6 +82,7 @@ export interface Talk {
   link?: string;
   videoUrl?: string;
   slidesUrl?: string;
+  relatedReports?: TalkRelatedReport[];
   featured?: boolean;
 }
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { format, isValid, parseISO } from "date-fns";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, FileText } from "lucide-react";
 import { Talk } from "@/types/content";
 
 interface TalkCardProps {
@@ -78,6 +78,43 @@ export default function TalkCard({
             </li>
           ))}
         </ul>
+      )}
+
+      {talk.relatedReports && talk.relatedReports.length > 0 && (
+        <section className="mt-5 border-t border-border pt-5">
+          <h4 className="text-xs font-mono uppercase tracking-wide text-muted">
+            Related institutional reports
+          </h4>
+          <ul
+            className="mt-3 space-y-3"
+            aria-label={`Related institutional reports for ${talk.title}`}
+          >
+            {talk.relatedReports.map((report) => (
+              <li
+                key={report.url}
+                className="rounded-md border border-border bg-paper px-4 py-3"
+              >
+                <div className="flex items-start gap-3">
+                  <FileText
+                    className="mt-0.5 h-4 w-4 shrink-0 text-muted"
+                    aria-hidden="true"
+                  />
+                  <div className="min-w-0">
+                    <p className="text-sm text-text">{report.description}</p>
+                    <Link
+                      href={report.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 inline-flex items-center text-sm text-link-alt hover:underline"
+                    >
+                      {report.label} <ExternalLink className="ml-1 h-3 w-3" />
+                    </Link>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
 
       {(talk.link || talk.videoUrl || talk.slidesUrl) && (
