@@ -66,21 +66,21 @@
       "Judicial Innovation",
       "Technology in Courts",
       "Access to Justice",
-      "Public Sector Innovation"
+    
     ],
     "relatedReports": [
       {
-        "description": "Official UAILab/TJMG report on the redesign of pre-claim forms for Small Claims Court users, using Design Thinking, plain language, and visual law.",
+        "description": "Redesign of pre-claim forms for Small Claims Court users, using Design Thinking, plain language, and visual law.",
         "label": "See Report",
         "url": "/reports/uailab-tjmg-small-claims-form-redesign-report.pdf"
       },
       {
-        "description": "Official UAILab/TJMG report on the redesign of the DEPOX judicial deposit form, based on Design Thinking workshops, user observation, plain language, and visual law.",
+        "description": "Redesign of the DEPOX judicial deposit form, based on Design Thinking workshops, user observation, plain language, and visual law.",
         "label": "See Report",
         "url": "/reports/uailab-tjmg-depox-form-redesign-report.pdf"
       },
       {
-        "description": "Official UAILab/TJMG report on a practical Design Thinking workshop delivered as part of the Judicial School's participatory management course.",
+        "description": "Practical Design Thinking workshop delivered as part of the Judicial School's participatory management course.",
         "label": "See Report",
         "url": "/reports/ejef-design-thinking-workshop-report.pdf"
       }
