@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Mail, Rss, GraduationCap, Github, Linkedin } from "lucide-react";
+import cv from "../../content/cv/cv.json";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createPageMetadata({
@@ -11,98 +11,73 @@ export const metadata: Metadata = createPageMetadata({
 
 export default function Home() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* Hero Section */}
-      <section className="mb-16">
-        <h1 className="text-h1 font-heading font-semibold text-text mb-4">
-          Izabela Acorroni
-        </h1>
-        <div className="flex flex-wrap gap-3 mb-6">
-          <Link
-            href="mailto:mendonci@tcd.ie"
-            className="px-4 py-2 rounded-lg bg-surface border border-border text-text hover:bg-accent hover:text-white hover:border-accent transition-colors text-sm font-medium flex items-center gap-2"
-          >
-            <Mail className="h-4 w-4" />
-            Email
-          </Link>
-          <Link
-            href={process.env.NEXT_PUBLIC_SUBSTACK_FEED_URL?.replace(/\/feed$/, "") || "https://thelawandtechmixandmatch.substack.com/"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 rounded-lg bg-surface border border-border text-text hover:bg-accent hover:text-white hover:border-accent transition-colors text-sm font-medium flex items-center gap-2"
-          >
-            <Rss className="h-4 w-4" />
-            Substack
-          </Link>
-          
-          <Link
-            href="https://scholar.google.com/citations?user=o1ALjbEAAAAJ&hl=en"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 rounded-lg bg-surface border border-border text-text hover:bg-accent hover:text-white hover:border-accent transition-colors text-sm font-medium flex items-center gap-2"
-          >
-            <GraduationCap className="h-4 w-4" />
-            Scholar
-          </Link>
-          <Link
-            href="https://github.com/i-acorroni"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 rounded-lg bg-surface border border-border text-text hover:bg-accent hover:text-white hover:border-accent transition-colors text-sm font-medium flex items-center gap-2"
-          >
-            <Github className="h-4 w-4" />
-            GitHub
-          </Link>
-          <Link
-            href="https://linkedin.com/in/izabela-acorroni"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 rounded-lg bg-surface border border-border text-text hover:bg-accent hover:text-white hover:border-accent transition-colors text-sm font-medium flex items-center gap-2"
-          >
-            <Linkedin className="h-4 w-4" />
-            LinkedIn
-          </Link>
-        </div>
-        <p className="text-xl text-text mb-6">
-        Law & Technology Researcher
+    <div className="site-page">
+      <header>
+        <p className="page-kicker">Law &amp; technology researcher</p>
+        <h1 className="page-title">now &amp; recent</h1>
+        <p className="page-intro">
+          I research how law and technology shape one another, with a focus on AI
+          governance, judicial decision-making, and access to justice.
         </p>
+      </header>
+
+      <ul className="notebook-list" aria-label="Current research and recent activities">
+        <li>
+          <span className="date-marker">2026_</span>{" "}
+          <Link href="/cv#education">{cv.education[0].title}</Link> at Trinity College
+          Dublin, researching AI-assisted judicial decision-making through JUDGEASSIST.
+        </li>
+        <li>
+          <span className="date-marker">2026_</span>{" "}
+          Joining the <Link href="/cv#fellowships">{cv.fellowships[0].title}</Link> at
+          the Center for AI and Digital Policy.
+        </li>
+        <li>
+          <span className="date-marker">2026_</span>{" "}
+          <Link href="/cv#fellowships">{cv.fellowships[1].title}</Link>, Information
+          Society Law Center, University of Milan.
+        </li>
+        <li>
+          <span className="date-marker">2025_</span>{" "}
+          <Link href="/cv#awards">{cv.awards[0].title}</Link>, Best Overall
+          Postgraduate Law Student, Birkbeck, University of London.
+        </li>
+      </ul>
+
+      <section className="notebook-section" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research interests</h2>
+        <ul className="research-list">
+          <li>AI governance and fundamental rights</li>
+          <li>Judicial decision-making and access to justice</li>
+          <li>Platform governance and algorithmic regulation</li>
+          <li>Code-driven and text-driven normativity</li>
+          <li>Digital transformation of the public sector</li>
+        </ul>
       </section>
 
-      {/* About Section */}
-      <section className="mb-16">
-        <h2 className="text-h2 font-heading font-semibold text-text mb-4">
-          About
-        </h2>
-        <div className="prose prose-lg max-w-none">
-          <p className="text-text mb-4">  A Brazilian legal scholar who has been engaged in academic research since 2015, and dedicated to studying the intersection of law and technology since 2020. Holding both a law degree and a secondary technical education in technology, she navigates easily between legal theory and technical implementation. 
-          </p>
-          <p className="text-text mb-4">
-          Graduated with distinction from the LLM in Law and New Technologies at Birkbeck University of London, where she received the Global Futures Scholarship and the Academic Excellence Award for Best Overall Postgraduate Law Student.
-          </p>
-          
-          <h3 className="text-xl font-heading font-semibold text-text mt-8 mb-4">
-            Research interests
-          </h3>
-          <ul className="list-disc list-inside text-text space-y-2">
-            <li>AI governance and fundamental rights</li>
-            <li>Judicial decision-making and access to justice</li>
-            <li>Platform governance and algorithmic regulation</li>
-            <li>Code-driven and text-driven normativity</li>
-            <li>Digital transformation of the public sector</li>
-          </ul>
-
-          <h3 className="text-xl font-heading font-semibold text-text mt-8 mb-4">
-            Strenghts
-          </h3>
-          <ul className="list-disc list-inside text-text space-y-2">
-            <li><b>Research maturity:</b> over a decade of research experience, with sustained focus on law&tech questions since 2020.</li>
-            <li><b>Justice systems experience:</b> former legal consultant at a Brazilian State Court of Justice (TJMG), leading and supporting projects on technology adoption, access to justice, and service design.</li>
-            <li><b>Policy-making experience:</b> conducted research on policy-making for three years at the Legal Centre for Public Policies at Pontifical Catholic University of Minas Gerais; participated at the Young Thinkers 2025 Training Programme at Centre for European Policy Studies (CEPS).</li>
-            <li><b>Interdisciplinarity:</b> experience working across legal theory, regulatory environments, and socio-technical infrastructures, bridging doctrinal analysis with implementation realities.</li>
-            <li><b>Technical fluency:</b> a tecnólogo background that supports engagement with technical subjects, and coding skills to prototype and test ideas.</li>
-          </ul>
-        </div>
-      </section>
+      <details className="about-notes">
+        <summary>more about my background</summary>
+        <p>
+          I am a Brazilian legal scholar engaged in academic research since 2015,
+          with a focus on the intersection of law and technology since 2020.
+          My background combines a law degree with secondary technical education
+          in technology, connecting legal theory with technical implementation.
+        </p>
+        <p>
+          I graduated with Distinction from the LLM in Law and New Technologies at
+          Birkbeck, University of London, where I received the Global Futures
+          Scholarship and the Academic Excellence Award for Best Overall
+          Postgraduate Law Student.
+        </p>
+        <h3>strengths</h3>
+        <ul>
+          <li><strong>Research maturity:</strong> over a decade of research experience, with a sustained focus on law and technology since 2020.</li>
+          <li><strong>Justice systems experience:</strong> former legal consultant at the State Court of Justice of Minas Gerais (TJMG), leading and supporting projects on technology adoption, access to justice, and service design.</li>
+          <li><strong>Policymaking experience:</strong> three years of research at the Legal Centre for Public Policies at the Pontifical Catholic University of Minas Gerais, and participation in the CEPS Young Thinkers 2025 Training Programme.</li>
+          <li><strong>Interdisciplinarity:</strong> experience across legal theory, regulatory environments, and socio-technical infrastructures, connecting doctrinal analysis with implementation.</li>
+          <li><strong>Technical fluency:</strong> a technical education background and coding skills to prototype and test ideas.</li>
+        </ul>
+      </details>
     </div>
   );
 }

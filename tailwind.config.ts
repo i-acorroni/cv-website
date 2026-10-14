@@ -1,40 +1,23 @@
 import type { Config } from "tailwindcss";
 
+const mono = ["Consolas", "Inconsolata", "Menlo", "Monaco", "Courier New", "monospace"];
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       colors: {
-        paper: "#FBFAF7",
-        surface: "#FFFFFF",
-        text: "#111827",
-        muted: "#4B5563",
-        border: "#E5E7EB",
-        accent: "#B45309",
-        "link-alt": "#1F3A8A",
+        paper: "#ffffff", surface: "#ffffff", text: "#191b18", muted: "#63675e",
+        border: "#e4e7df", accent: "#245329", highlight: "#8fff69", "link-alt": "#245329",
       },
-      fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        heading: ["var(--font-sora)", "system-ui", "sans-serif"],
-        mono: ["var(--font-mono)", "monospace"],
-      },
+      fontFamily: { sans: mono, heading: mono, mono },
       fontSize: {
-        body: ["18px", { lineHeight: "1.65" }],
-        h1: ["48px", { lineHeight: "1.15" }],
-        h2: ["30px", { lineHeight: "1.2" }],
-        meta: ["13px", { lineHeight: "1.5" }],
-      },
-      transitionProperty: {
-        'height': 'height',
-        'spacing': 'margin, padding',
+        body: ["15px", { lineHeight: "1.8" }],
+        h1: ["34px", { lineHeight: "1.3" }],
+        h2: ["22px", { lineHeight: "1.4" }],
+        meta: ["12px", { lineHeight: "1.7" }],
       },
     },
   },
   plugins: [],
 };
 export default config;
-

@@ -19,7 +19,7 @@ export function createPageMetadata({
   const pageUrl = getAbsoluteUrl(canonicalPath);
 
   return {
-    title,
+    title: title || { absolute: siteName },
     description: resolvedDescription,
     alternates: {
       canonical: canonicalPath,

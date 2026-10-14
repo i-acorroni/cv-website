@@ -5,7 +5,11 @@
     "description": "Contributed to the full digitalisation of a Court of Appeal's caseflow, improving the whole Court's digitalisation system, facilitating document access and streamlining internal procedures for judges and court staff. The project was listed in CNJ's national repository of good practices for the public sector.",
     "longDescription": "This project involved the complete digital transformation of a Court of Appeal's caseflow management system. The initiative significantly improved the Court's overall digitalisation infrastructure, making document access more efficient and streamlining internal procedures for both judges and court staff. The project's success and impact led to its recognition in CNJ's (Conselho Nacional de Justiça) national repository of good practices for the public sector.",
     "category": "contributed",
-    "techStack": ["Digital Justice", "Caseflow Management", "Internal Systems"],
+    "techStack": [
+      "Digital Justice",
+      "Caseflow Management",
+      "Internal Systems"
+    ],
     "links": {
       "website": "https://renovajud.cnj.jus.br/conteudo-publico?iniciativa=264"
     },
@@ -18,7 +22,10 @@
     "description": "Worked alongside the Court's Technology Centre and Data Protection Officer, to make the Data Protection Internal Policy accessible to users by using Legal Design and Plain Language techniques. The project was listed in CNJ's national repository of good practices for the public sector.",
     "longDescription": "This project focused on improving accessibility and comprehension of the Court's Data Protection Internal Policy through the application of Legal Design and Plain Language principles. Collaborating with the Court's Technology Centre and Data Protection Officer, the initiative transformed complex legal documentation into more accessible and user-friendly formats, making data protection policies more understandable for all users. The project's innovative approach to legal communication earned recognition in CNJ's (Conselho Nacional de Justiça) national repository of good practices for the public sector.",
     "category": "contributed",
-    "techStack": ["Legal Design", "Plain Language"],
+    "techStack": [
+      "Legal Design",
+      "Plain Language"
+    ],
     "links": {
       "website": "https://www.tjmg.jus.br/portal-tjmg/acoes-e-programas/politica-de-privacidade/",
       "demo": "https://renovajud.cnj.jus.br/conteudo-publico?iniciativa=705"
@@ -32,7 +39,11 @@
     "description": "Collaborated with Innovation Centres across Brazil to support judges in designing solutions for Special Courts; co-developed five prototypes to be presented at a National Forum, including one selected for nationwide implementation.",
     "longDescription": "FONÁGIL is a national initiative from the Fórum Nacional de Juizados Especiais (Fonaje) that brings together innovation laboratories from multiple courts across Brazil to collaboratively design solutions for challenges faced by Special Courts. Working as part of the UAILab team from TJMG, I collaborated with facilitators from innovation labs in TJDFT, TJRO, TJPE, and TJSC to conduct workshops using Design Thinking and agile methodologies. The project involved facilitating collaborative sessions with judges from across the country, supporting the development of innovative solutions through creative ideation and rapid prototyping. Five prototypes were developed and presented at the National Forum, with one selected for pilot implementation at a state court, with potential for nationwide replication.",
     "category": "contributed",
-    "techStack": ["Design Thinking", "Agile Methodologies", " Public Sector Innovation"],
+    "techStack": [
+      "Design Thinking",
+      "Agile Methodologies",
+      " Public Sector Innovation"
+    ],
     "links": {
       "website": "https://www.tjmg.jus.br/portal-tjmg/noticias/fonagil-realiza-segunda-rodada-de-oficinas-para-promover-inovacao-nos-juizados-especiais.htm",
       "powerpoint": "https://canva.link/ihrzf9i2n32yktb"
@@ -45,7 +56,12 @@
     "description": "A legal clarity tool for non-lawyers: a web app where you ask a legal question, it runs your issue through multiple AI models, compares their answers, and turns that into a clear, structured summary in plain language, that shows where models agree and disagree.",
     "longDescription": "Lex Connect is a legal clarity tool designed to make legal information accessible to non-lawyers. Users can ask legal questions through a web interface, and the application processes their queries through multiple AI models simultaneously. The system then compares the responses from different models, identifying areas of agreement and disagreement, and presents the results in a clear, structured summary using plain language. This approach helps users understand legal concepts without needing legal expertise, while also providing transparency about how different AI models interpret the same question.",
     "category": "personal",
-    "techStack": ["Web App", "AI Models", "Legal Tech", "Programming"],
+    "techStack": [
+      "Web App",
+      "AI Models",
+      "Legal Tech",
+      "Programming"
+    ],
     "links": {
       "github": "https://github.com/i-acorroni/lex-connect"
     },
@@ -58,12 +74,48 @@
     "description": "LINGUA, an acronym for Language Inclusion Network for Global Understanding & Advocacy, is an international research collective that investigates how platform design, machine translation, and digital policy can either reinforce language barriers or foster truly inclusive digital environments.",
     "longDescription": "LINGUA (Language Inclusion Network for Global Understanding & Advocacy) is an international research collective founded by scholars from Brazil, Belarus, Kenya, and Egypt, dedicated to promoting language justice in digital spaces. The name 'Lingua' honors the Latin root meaning 'tongue' or 'language', recognizing that communication encompasses identity, heritage, and understanding beyond mere words. Through interdisciplinary research, LINGUA investigates how platform design, machine translation, and digital policy can either reinforce language barriers or foster truly inclusive digital environments. The collective collaborates with tech developers, policymakers, and grassroots organizations to pilot multilingual tools, publish white papers on digital accessibility, and host workshops that bring together underrepresented language communities. LINGUA's mission is to shape a future where language is never a barrier and where every voice has the power to be heard.",
     "category": "personal",
-    "techStack": ["Language Justice", "Research", "Digital Policy", "Platform Design"],
+    "techStack": [
+      "Language Justice",
+      "Research",
+      "Digital Policy",
+      "Platform Design"
+    ],
     "links": {
       "website": "https://www.linkedin.com/company/lab-lingua"
     },
     "image": "/images/lingua.jpg",
     "featured": true
+  },
+  {
+    "id": "design-thinking-workshops-for-implementation-of-technology-in-court-procedures",
+    "name": "Design Thinking Workshops for the Implementation of Technology in Court Procedures",
+    "period": "2021–2023",
+    "organisation": "State Court of Justice of Minas Gerais, Brazil",
+    "description": "Between 2021 and 2023, I conducted several design thinking workshops with magistrates, judges, court clerks, and administrative staff at the State Court of Justice of Minas Gerais. These workshops mapped institutional and procedural problems, translated them into practical requirements, and supported the implementation of technologies aimed at improving judicial services, internal workflows, usability, and access to justice.",
+    "category": "contributed",
+    "techStack": [
+      "Design Thinking",
+      "Judicial Innovation",
+      "Technology in Courts",
+      "Access to Justice",
+      "Public Sector Innovation"
+    ],
+    "relatedReports": [
+      {
+        "description": "Redesign of pre-claim forms for Small Claims Court users, using Design Thinking, plain language, and visual law.",
+        "label": "See Report",
+        "url": "/reports/uailab-tjmg-small-claims-form-redesign-report.pdf"
+      },
+      {
+        "description": "Redesign of the DEPOX judicial deposit form, based on Design Thinking workshops, user observation, plain language, and visual law.",
+        "label": "See Report",
+        "url": "/reports/uailab-tjmg-depox-form-redesign-report.pdf"
+      },
+      {
+        "description": "Practical Design Thinking workshop delivered as part of the Judicial School's participatory management course.",
+        "label": "See Report",
+        "url": "/reports/ejef-design-thinking-workshop-report.pdf"
+      }
+    ]
   }
 ]
-

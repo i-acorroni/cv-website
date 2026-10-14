@@ -18,10 +18,10 @@ export default async function SubstackPage() {
     "https://thelawandtechmixandmatch.substack.com";
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="site-page">
       <div className="flex flex-col gap-4 mb-8 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h1 className="text-h1 font-heading font-semibold text-text mb-2">
+          <h1 className="page-title">
             Substack
           </h1>
           <p className="text-muted max-w-2xl">
@@ -32,7 +32,7 @@ export default async function SubstackPage() {
           href={publicationUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-surface border border-border text-text hover:bg-accent hover:text-white hover:border-accent transition-colors text-sm font-medium"
+          className="inline-flex text-sm underline"
         >
           Visit publication
         </Link>

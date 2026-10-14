@@ -1,16 +1,15 @@
 # CV Website
 
-A modern, professional CV website built with Next.js, TypeScript, and Tailwind CSS. This website features a clean, minimal design perfect for showcasing your academic or professional profile, including CV, publications, blog posts, projects, and more.
+A research notebook website built with Next.js, TypeScript, and Tailwind CSS. The design uses system monospace typography, green highlights, a persistent desktop sidebar, and text-led archives.
 
 ## Features
 
-- **Homepage**: Hero section with about section and recent Substack posts
-- **CV Page**: Professional resume layout with education, experience, skills, and awards
-- **Publications**: Display academic/research publications with filtering and links
-- **Projects**: Portfolio showcase with project cards, tech stack, and links
+- **Homepage**: Current research and recent activities, research interests, and expandable background notes
+- **CV Page**: Online education, experience, fellowships, awards, and academic service
+- **Publications**: Dated academic publications and commentary with source links
+- **Projects**: Text-led archive with descriptions, subject areas, and project links
 - **Contact**: Contact information and social media links
 - **Responsive Design**: Mobile-first, fully responsive layout
-- **Dark Mode**: Automatic dark mode support based on system preferences
 
 ## Technology Stack
 
@@ -75,14 +74,18 @@ cv-website/
 Update the following files to customize your site:
 
 - `src/app/page.tsx`: Homepage content (includes about section)
-- `src/app/cv/page.tsx`: CV/resume content
-- `src/components/SocialLinks.tsx`: Social media links
+- `content/cv/cv.json`: CV/resume content
+- `src/app/globals.css` and `tailwind.config.ts`: Notebook layout, typography, and colour palette
+- `src/components/Navigation.tsx`: Sidebar navigation, contact, and social links
 - `src/app/layout.tsx`: Site metadata
 
 ### Content
 
 - **Publications**: Edit `content/publications/publications.json`
 - **Projects**: Edit `content/projects/projects.json`
+- **Talks**: Edit `content/talks/talks.json`
+- **CV**: Edit `content/cv/cv.json`
+- **Homepage updates**: Edit `src/app/page.tsx`
 
 ## Development
 
@@ -116,7 +119,7 @@ Update the following files to customize your site:
 - The site uses TypeScript - check for type errors with `npm run build`
 - Substack posts are fetched from RSS feed at build time
 - Images from Substack are automatically optimized by Next.js
-- Test responsive design and dark mode before deploying
+- Test the sidebar, page navigation, and mobile layout before deploying
 
 ## Deployment
 

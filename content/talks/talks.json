@@ -1,5 +1,25 @@
 [
   {
+    "id": "redefining-legal-expertise-islc-part-ii",
+    "title": "Redefining legal expertise: a comparative overview of AI and the legal professions — Part II",
+    "shortTitle": "Redefining Legal Expertise — Part II",
+    "type": "speaker",
+    "event": "ISLC webinar",
+    "organisation": "Information Society Law Center, University of Milan",
+    "date": "2026-09-28",
+    "location": "Online",
+    "language": "english",
+    "description": "Discussed Brazil’s AI regulatory framework, the Sinapses platform for sharing AI models across courts, and AI tools for citizens and other court users, as part of an ISLC comparative webinar on AI and the legal professions.",
+    "themes": [
+      "AI in Courts",
+      "AI Regulation",
+      "Access to Justice",
+      "Sinapses"
+    ],
+    "link": "https://pt.linkedin.com/posts/izabela-acorroni_redefining-legal-expertise-activity-7508564248239980546-KFhq",
+    "featured": true
+  },
+  {
     "id": "innovation-in-public-sector-conference-talk",
     "title": "Innovation in the Judicial System in Brazil",
     "type": "conference-speaker",
@@ -32,7 +52,8 @@
       "AI Governance"
     ],
     "slidesUrl": "https://canva.link/lof6c88ulr5sj40",
-    "featured": true
+    "featured": true,
+    "shortTitle": "Automated Facial Recognition in Brazil"
   },
   {
     "id": "innovation-in-the-court-of-justice-talk",
@@ -50,40 +71,5 @@
       "Access to Justice"
     ],
     "videoUrl": "https://www.youtube.com/watch?v=jZylpcrnXr0&t=9728s"
-  },
-  {
-    "id": "design-thinking-workshops-for-implementation-of-technology-in-court-procedures",
-    "title": "Design Thinking Workshops for the Implementation of Technology in Court Procedures",
-    "type": "workshop-series",
-    "event": "State Court of Justice of Minas Gerais, Brazil",
-    "organisation": "State Court of Justice of Minas Gerais, Brazil",
-    "date": "2021–2023",
-    "location": "Minas Gerais, Brazil",
-    "language": "portuguese",
-    "description": "Between 2021 and 2023, I conducted several design thinking workshops with magistrates, judges, court clerks, and administrative staff at the State Court of Justice of Minas Gerais. These workshops mapped institutional and procedural problems, translated them into practical requirements, and supported the implementation of technologies aimed at improving judicial services, internal workflows, usability, and access to justice.",
-    "themes": [
-      "Design Thinking",
-      "Judicial Innovation",
-      "Technology in Courts",
-      "Access to Justice",
-      "Public Sector Innovation"
-    ],
-    "relatedReports": [
-      {
-        "description": "Redesign of pre-claim forms for Small Claims Court users, using Design Thinking, plain language, and visual law.",
-        "label": "See Report",
-        "url": "/reports/uailab-tjmg-small-claims-form-redesign-report.pdf"
-      },
-      {
-        "description": "Redesign of the DEPOX judicial deposit form, based on Design Thinking workshops, user observation, plain language, and visual law.",
-        "label": "See Report",
-        "url": "/reports/uailab-tjmg-depox-form-redesign-report.pdf"
-      },
-      {
-        "description": "Practical Design Thinking workshop delivered as part of the Judicial School's participatory management course.",
-        "label": "See Report",
-        "url": "/reports/ejef-design-thinking-workshop-report.pdf"
-      }
-    ]
   }
 ]

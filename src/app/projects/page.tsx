@@ -5,58 +5,28 @@ import ProjectCard from "@/components/ProjectCard";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Projects",
-  description:
-    "Selected legal tech, research, and public-sector innovation projects by Izabela Acorroni.",
+  description: "Selected legal tech, research, and public-sector innovation projects by Izabela Acorroni.",
   pathname: "/projects",
 });
 
 export default function ProjectsPage() {
   const projects = getAllProjects();
-
-  const personalProjects = projects.filter(
-    (project) => project.category === "personal"
-  );
-  const contributedProjects = projects.filter(
-    (project) => project.category !== "personal"
-  );
+  const groups = [
+    { title: "personal projects", entries: projects.filter((project) => project.category === "personal") },
+    { title: "projects I’ve contributed to", entries: projects.filter((project) => project.category !== "personal") },
+  ];
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-h1 font-heading font-semibold text-text mb-8">Projects</h1>
-
-      {projects.length === 0 ? (
-        <p className="text-muted">
-          No projects available yet. Add projects in content/projects/projects.json
-        </p>
-      ) : (
-        <div className="space-y-12">
-          {personalProjects.length > 0 && (
-            <section>
-              <h2 className="text-h2 font-heading font-semibold text-text mb-6">
-                Personal Projects
-              </h2>
-              <div className="grid gap-6 md:grid-cols-2">
-                {personalProjects.map((project) => (
-                  <ProjectCard key={project.id} project={project} />
-                ))}
-              </div>
-            </section>
-          )}
-
-          {contributedProjects.length > 0 && (
-            <section>
-              <h2 className="text-h2 font-heading font-semibold text-text mb-6">
-                Projects I&apos;ve contributed:
-              </h2>
-              <div className="grid gap-6 md:grid-cols-2">
-                {contributedProjects.map((project) => (
-                  <ProjectCard key={project.id} project={project} />
-                ))}
-              </div>
-            </section>
-          )}
-        </div>
-      )}
+    <div className="site-page">
+      <p className="page-kicker">Research in practice</p>
+      <h1 className="page-title">projects</h1>
+      {projects.length === 0 && <p>No projects available yet.</p>}
+      {groups.filter((group) => group.entries.length > 0).map((group) => (
+        <section key={group.title} className="notebook-section" aria-label={group.title}>
+          <h2>{group.title}</h2>
+          {group.entries.map((project) => <ProjectCard key={project.id} project={project} />)}
+        </section>
+      ))}
     </div>
   );
 }

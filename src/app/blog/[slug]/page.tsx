@@ -67,10 +67,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="site-page">
       <Link
         href="/blog"
-        className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline mb-8"
+        className="inline-flex items-center text-accent hover:underline mb-8"
       >
         <ArrowLeft className="h-4 w-4 mr-2" />
         Back to blog
@@ -78,10 +78,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       <article>
         <header className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h1 className="page-title">
             {post.title}
           </h1>
-          <div className="flex items-center text-sm text-gray-600 dark:text-gray-400 space-x-4">
+          <div className="flex items-center text-sm text-muted space-x-4">
             <time dateTime={post.date}>
               {format(new Date(post.date), "PPP")}
             </time>
@@ -97,7 +97,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded"
+                  className="text-xs text-muted"
                 >
                   {tag}
                 </span>
@@ -107,7 +107,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </header>
 
         <div
-          className="prose prose-lg dark:prose-invert max-w-none"
+          className="prose max-w-none"
           dangerouslySetInnerHTML={{ __html: markdownContent.html }}
         />
       </article>

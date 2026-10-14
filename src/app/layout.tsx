@@ -1,30 +1,8 @@
 import type { Metadata } from "next";
-import { Sora, Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { getSiteDescription, getSiteName, getSiteUrl } from "@/lib/site";
-
-const sora = Sora({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-  variable: "--font-sora",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const ibmPlexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-mono",
-  display: "swap",
-});
 
 const siteName = getSiteName();
 const siteDescription = getSiteDescription();
@@ -67,11 +45,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${sora.variable} ${ibmPlexMono.variable} antialiased`}>
-        <div className="min-h-screen flex flex-col bg-paper">
+      <body>
+        <a href="#main-content" className="skip-link">Skip to content</a>
+        <div className="site-shell">
           <Navigation />
-          <main className="flex-grow">{children}</main>
-          <Footer />
+          <div className="site-column">
+            <main id="main-content" className="site-main">{children}</main>
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

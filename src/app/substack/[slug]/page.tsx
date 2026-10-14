@@ -71,10 +71,10 @@ export default async function SubstackPostPage({ params }: SubstackPostPageProps
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="site-page">
       <Link
         href="/substack"
-        className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline mb-8"
+        className="inline-flex items-center text-accent hover:underline mb-8"
       >
         <ArrowLeft className="h-4 w-4 mr-2" />
         Back to Substack
@@ -82,10 +82,10 @@ export default async function SubstackPostPage({ params }: SubstackPostPageProps
 
       <article>
         <header className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h1 className="page-title">
             {post.title}
           </h1>
-          <div className="flex items-center text-sm text-gray-600 dark:text-gray-400 space-x-4">
+          <div className="flex items-center text-sm text-muted space-x-4">
             <time dateTime={post.date}>
               {format(new Date(post.date), "PPP")}
             </time>
@@ -102,7 +102,7 @@ export default async function SubstackPostPage({ params }: SubstackPostPageProps
                 href={post.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+                className="inline-flex items-center text-accent hover:underline"
               >
                 Read on Substack <ExternalLink className="h-4 w-4 ml-1" />
               </a>
@@ -111,7 +111,7 @@ export default async function SubstackPostPage({ params }: SubstackPostPageProps
         </header>
 
         <div
-          className="prose prose-lg dark:prose-invert max-w-none"
+          className="prose max-w-none"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
       </article>

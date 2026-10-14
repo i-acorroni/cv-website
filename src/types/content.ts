@@ -30,6 +30,8 @@ export interface Publication {
 export interface Project {
   id: string;
   name: string;
+  period?: string;
+  organisation?: string;
   description: string;
   longDescription?: string;
   category?: "personal" | "contributed";
@@ -41,6 +43,7 @@ export interface Project {
   };
   image?: string;
   featured?: boolean;
+  relatedReports?: RelatedReport[];
 }
 
 export type TalkType =
@@ -62,7 +65,7 @@ export type TalkLanguage =
   | "bilingual"
   | "other";
 
-export interface TalkRelatedReport {
+export interface RelatedReport {
   description: string;
   label: string;
   url: string;
@@ -71,6 +74,7 @@ export interface TalkRelatedReport {
 export interface Talk {
   id: string;
   title: string;
+  shortTitle?: string;
   type: TalkType;
   event: string;
   organisation: string;
@@ -82,7 +86,7 @@ export interface Talk {
   link?: string;
   videoUrl?: string;
   slidesUrl?: string;
-  relatedReports?: TalkRelatedReport[];
+  relatedReports?: RelatedReport[];
   featured?: boolean;
 }
 

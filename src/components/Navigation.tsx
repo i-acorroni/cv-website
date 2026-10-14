@@ -2,85 +2,49 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
 import { navItems } from "@/lib/navigation";
+
+const profiles = [
+  { label: "substack", href: "https://thelawandtechmixandmatch.substack.com/" },
+  { label: "scholar", href: "https://scholar.google.com/citations?user=o1ALjbEAAAAJ&hl=en" },
+  { label: "github", href: "https://github.com/i-acorroni" },
+  { label: "linkedin", href: "https://www.linkedin.com/in/izabela-acorroni" },
+];
 
 export default function Navigation() {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="border-b border-border" aria-label="Primary">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="flex items-baseline space-x-4">
-              {navItems.map((item) => {
-                const isActive = pathname === item.href;
-                return (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                      isActive
-                        ? "text-text bg-border"
-                        : "text-muted hover:text-text hover:bg-border/50"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-muted hover:text-text hover:bg-border focus:outline-none"
-              aria-expanded={isOpen}
-              aria-controls="mobile-navigation"
-            >
-              <span className="sr-only">
-                {isOpen ? "Close main menu" : "Open main menu"}
-              </span>
-              {isOpen ? (
-                <X className="block h-6 w-6" aria-hidden="true" />
-              ) : (
-                <Menu className="block h-6 w-6" aria-hidden="true" />
-              )}
-            </button>
-          </div>
-        </div>
+    <aside className="site-sidebar">
+      <Link href="/" className="site-wordmark" aria-label="Izabela Acorroni — home">
+        <span>izabela</span><br /><span>acorroni</span>
+      </Link>
+      <nav aria-label="Primary" className="site-navigation">
+        <ul>
+          {navItems.map((item) => (
+            <li key={item.href}>
+              <Link href={item.href} aria-current={pathname === item.href ? "page" : undefined}>
+                <span>{item.label.toLowerCase()}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <div className="site-contact">
+        <a href="mailto:mendonci@tcd.ie">mendonci@tcd.ie</a>
+        <ul className="site-profiles" aria-label="Elsewhere">
+          {profiles.map((profile) => (
+            <li key={profile.label}>
+              <a href={profile.href} target="_blank" rel="noopener noreferrer">
+                {profile.label} <span aria-hidden="true">↗</span>
+                <span className="sr-only"> (opens in a new tab)</span>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
-
-      {/* Mobile Navigation */}
-      {isOpen && (
-        <div className="md:hidden" id="mobile-navigation">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-border">
-            {navItems.map((item) => {
-              const isActive = pathname === item.href;
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                    isActive
-                      ? "text-text bg-border"
-                      : "text-muted hover:text-text hover:bg-border/50"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      )}
-    </nav>
+      <p className="sidebar-note">law, technology<br />&amp; public life.</p>
+      <p className="sidebar-location">Trinity College Dublin</p>
+    </aside>
   );
 }
