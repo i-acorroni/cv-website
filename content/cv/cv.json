@@ -1,0 +1,153 @@
+{
+  "experience": [
+    {
+      "period": "2025",
+      "title": "Researcher, DTec: Law and Technology Group",
+      "organisation": "Federal University of Minas Gerais, Brazil",
+      "details": [
+        "Conducted comparative legal research on AI discrimination, automated decision-making, biometric data governance, and mitigation strategies across EU, UK, US, and Latin American frameworks.",
+        "Examined gaps in AI governance, focusing on fundamental rights, due process, accountability, and public-sector uses of technology.",
+        "Co-authored research on algorithmic bias, automated facial recognition, and biometric data management for the Brazilian Centre of Law, Technology and Innovation’s blog."
+      ]
+    },
+    {
+      "period": "2021–2023",
+      "title": "Legal Consultant, Innovation Centre (UAILab)",
+      "organisation": "State Court of Justice of Minas Gerais (TJMG), Brazil",
+      "details": [
+        "Conducted legal research and prepared opinions on the use of new technologies in court procedures, including compliance with resolutions of Brazil’s National Justice Council (CNJ).",
+        "Contributed to CONECTA TJMG, a project to digitalise a Court of Appeal’s caseflow and improve document access and internal procedures for judges and court staff. The initiative was included in CNJ’s national repository of good practices.",
+        "Worked with the Court’s Technology Centre and Data Protection Officer to make its internal data protection policy more accessible through legal design and plain language. This initiative was also included in CNJ’s repository.",
+        "Collaborated with judicial innovation centres across Brazil through FONÁGIL, supporting judges in developing five prototypes for Special Courts, including one selected for pilot implementation.",
+        "Facilitated design thinking workshops with magistrates, judges, court clerks, and administrative staff to improve judicial services, workflows, and access to justice."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "period": "2026–present",
+      "title": "PhD in Law",
+      "organisation": "Trinity College Dublin, Ireland",
+      "details": [
+        "Research within a European Research Council-funded programme (JUDGEASSIST) examining the design, evaluation, and deployment of AI systems that assist judicial decision-making, with a focus on judicial integrity, legitimacy, and European rule of law values."
+      ]
+    },
+    {
+      "period": "2023–2024",
+      "title": "Master of Laws (LLM), Law and New Technologies",
+      "organisation": "Birkbeck, University of London, United Kingdom",
+      "details": [
+        "Graduated with Distinction."
+      ]
+    },
+    {
+      "period": "2014–2021",
+      "title": "Law degree and postgraduate studies",
+      "organisation": "Pontifical Catholic University of Minas Gerais, Brazil",
+      "details": [
+        "Bachelor of Laws (LLB), First class.",
+        "Postgraduate diploma studies in Tax Law and Civil Law, First class honours."
+      ]
+    },
+    {
+      "period": "2010–2012",
+      "title": "Secondary Technical Education, Technology",
+      "organisation": "Polytechnic School of Minas Gerais, Brazil",
+      "details": []
+    }
+  ],
+  "fellowships": [
+    {
+      "period": "2026",
+      "title": "AI Policy Clinic Research Group",
+      "organisation": "Center for AI and Digital Policy",
+      "details": [
+        "The clinics are intensive, interdisciplinary, semester-long courses, established to teach future leaders in the AI policy field skills in policy analysis, research, evaluation, team management, and policy formation. Topics covered include AI History, AI Issues and Institutions, AI Regulation and Policy Frameworks, and Research Methods."
+      ]
+    },
+    {
+      "period": "2026",
+      "title": "ISLC Fellow, “The Augmented Jurist”",
+      "organisation": "Information Society Law Center, University of Milan, Italy",
+      "details": [
+        "Research on how generative AI, automation, and decision-support systems transform legal reasoning, institutional practices, and access to justice."
+      ]
+    },
+    {
+      "period": "2025",
+      "title": "Young Thinkers Training Programme",
+      "organisation": "Centre for European Policy Studies (CEPS)",
+      "details": [
+        "Selected for a programme on policymaking, citizen participation, foresight, technology futures, and policy commentary writing."
+      ]
+    },
+    {
+      "period": "2024",
+      "title": "Digital Policy Leadership Summit",
+      "organisation": "Aspiration, Brussels, Belgium",
+      "details": [
+        "Selected with full funding to participate in discussions and working groups on EU digital policy priorities, including Digital Services Act implementation and AI governance."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "period": "2025",
+      "title": "Academic Excellence Award",
+      "organisation": "Birkbeck, University of London",
+      "details": [
+        "Best Overall Postgraduate Law Student."
+      ]
+    },
+    {
+      "period": "2023",
+      "title": "Global Futures Scholarship",
+      "organisation": "Birkbeck, University of London",
+      "details": [
+        "Scholarship for postgraduate study in Law and New Technologies."
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "period": "2024–present",
+      "title": "Independent researcher and writer",
+      "organisation": "The Law and Tech Mix and Match",
+      "details": [
+        "Writing about the intersections of law and technology on Substack."
+      ]
+    },
+    {
+      "period": "2024–present",
+      "title": "Co-founder",
+      "organisation": "LINGUA: Language Inclusion Network for Global Understanding & Advocacy",
+      "details": [
+        "International research collective exploring language justice in digital spaces, including the effects of platform design, machine translation, and digital policy on language inclusion."
+      ]
+    },
+    {
+      "period": "2025–2026",
+      "title": "Award evaluator, Prêmio Conexão Inova",
+      "organisation": "Conexão Inovação Pública, Brazil",
+      "details": [
+        "Member of the first-stage evaluation team for the sixth edition of a public-sector innovation award."
+      ]
+    },
+    {
+      "period": "2018",
+      "title": "Undergraduate teaching assistant, Law",
+      "organisation": "Pontifical Catholic University of Minas Gerais, Brazil",
+      "details": [
+        "Supported assessment, lecture planning, and academic events."
+      ]
+    },
+    {
+      "period": "2015–2017",
+      "title": "Researcher, Legal Centre for Public Policies",
+      "organisation": "Pontifical Catholic University of Minas Gerais, Brazil",
+      "details": [
+        "Research in public law, public administration, and public policy."
+      ]
+    }
+  ]
+}

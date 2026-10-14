@@ -5,7 +5,7 @@ import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createPageMetadata({
   description:
-    "Law and technology research by Izabela Acorroni, including publications, talks, projects, writing, and a downloadable CV.",
+    "Law and technology research by Izabela Acorroni, including publications, talks, projects, writing, and an online CV.",
   pathname: "/",
 });
 
@@ -81,14 +81,14 @@ export default function Home() {
           </p>
           
           <h3 className="text-xl font-heading font-semibold text-text mt-8 mb-4">
-            Research Interests
+            Research interests
           </h3>
           <ul className="list-disc list-inside text-text space-y-2">
-            <li>Platform governance: how platforms operationalise rules through policies, enforcement workflows, and technical design</li>
-            <li>Implications of the use of AI systems in legal decision-making</li>
-            <li>Law as Code vs. Code as Law</li>
-            <li>Algorithmic regulation</li>
-            <li>Leveraging technology to enhance access to justice</li>
+            <li>AI governance and fundamental rights</li>
+            <li>Judicial decision-making and access to justice</li>
+            <li>Platform governance and algorithmic regulation</li>
+            <li>Code-driven and text-driven normativity</li>
+            <li>Digital transformation of the public sector</li>
           </ul>
 
           <h3 className="text-xl font-heading font-semibold text-text mt-8 mb-4">
