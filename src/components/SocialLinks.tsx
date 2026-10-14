@@ -22,7 +22,7 @@ function getDefaultSocialLinks(): SocialLink[] {
     },
     {
       name: "Email",
-      url: "mailto:your.email@example.com",
+      url: "mailto:mendonci@tcd.ie",
       icon: "mail",
     },
     {

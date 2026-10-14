@@ -19,7 +19,7 @@ export default function Home() {
         </h1>
         <div className="flex flex-wrap gap-3 mb-6">
           <Link
-            href="mailto:izabela@lawtechmixmat.ch"
+            href="mailto:mendonci@tcd.ie"
             className="px-4 py-2 rounded-lg bg-surface border border-border text-text hover:bg-accent hover:text-white hover:border-accent transition-colors text-sm font-medium flex items-center gap-2"
           >
             <Mail className="h-4 w-4" />
