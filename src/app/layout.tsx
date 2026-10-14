@@ -33,8 +33,14 @@ export const metadata: Metadata = {
     description: siteDescription,
   },
   icons: {
-    icon: "/icon.svg",
-    shortcut: "/icon.svg",
+    icon: [
+      { url: "/favicon.ico?v=2", type: "image/x-icon", sizes: "16x16 32x32 48x48 64x64 256x256" },
+      { url: "/favicon-32.png?v=2", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-192.png?v=2", type: "image/png", sizes: "192x192" },
+      { url: "/icon.svg?v=2", type: "image/svg+xml", sizes: "any" },
+    ],
+    shortcut: "/favicon.ico?v=2",
+    apple: { url: "/apple-touch-icon.png?v=2", sizes: "180x180", type: "image/png" },
   },
 };
 
